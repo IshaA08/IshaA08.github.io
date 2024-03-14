@@ -1,0 +1,31 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #F1DAC4;
+}
+
+.navbar {
+    background: #FFB7C5;
+}
+
+.navbar-nav {
+    background: #F1DAC4;
+    border-radius: 30px;
+}
+
+.nav-link {
+    color: #1F2232;
+    cursor: pointer;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+}
+
+.nav-link:hover {
+    color: #596475;
+}
+
+.navbar-collapse {
+    justify-content: center;
+}
