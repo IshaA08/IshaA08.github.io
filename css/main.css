@@ -1,20 +1,29 @@
+:root {
+    /* Color Palette */
+    --bg: #F1DAC4;
+    --font: #1F2232;
+    --primary: #FFB7C5;
+    --secondary: #6BA368;
+    --accent: #596475;
+}
+
 body {
     padding: 0;
     margin: 0;
-    background: #F1DAC4;
+    background: var(--bg);
 }
 
 .navbar {
-    background: #FFB7C5;
+    background: var(--primary);
 }
 
 .navbar-nav {
-    background: #F1DAC4;
+    background: var(--bg);
     border-radius: 30px;
 }
 
 .nav-link {
-    color: #1F2232;
+    color: var(--font);
     cursor: pointer;
     margin-right: 1em;
     margin-left: 1em;
@@ -23,7 +32,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #596475;
+    color: var(--accent);
 }
 
 .navbar-collapse {
