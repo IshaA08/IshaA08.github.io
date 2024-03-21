@@ -52,3 +52,10 @@ body {
 .navbar-collapse {
     justify-content: center;
 }
+
+.header {
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
