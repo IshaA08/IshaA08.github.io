@@ -56,10 +56,10 @@ body {
     position: relative;
 }
 
-.herotext {
+.description {
     left: 50%;
     position: absolute;
-    top: 45%;
+    top: 35%;
     transform: translate(-50%, -55%);
     text-align: center;
 }
@@ -68,14 +68,37 @@ h1 {
     text-align: center;
 }
 
-.herotext h1 {
+.description h1 {
     color: var(--font);
 }
 
-.herotext p {
+.description p {
     color: var(--font);
     font-size: 1.3rem;
     line-height: 1.5;
+}
+
+.header button {
+    color: var(--font);
+    font-size: 1rem;
+    line-height: 1.5;
+    border: 1px solid var(--accent);
+    background-image: url("images/pink-nav.png");
+    border-radius: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--primary);
+    color: var(--accent);
+    opacity: 60%;
+    position: absolute;
+    bottom: 5%;
+    left: 45%;
+}
+
+.header button:hover {
+    border: 1px solid var(--font);
+    color: var(--font);
+    opacity: 100%;
 }
 
 #about {
