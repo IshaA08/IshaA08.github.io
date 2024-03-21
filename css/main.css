@@ -59,3 +59,21 @@ body {
     background-position: center;
     position: relative;
 }
+
+.herotext {
+    left: 50%;
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+}
+
+.herotext h1 {
+    color: var(--font);
+}
+
+.herotext p {
+    color: var(--font);
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
