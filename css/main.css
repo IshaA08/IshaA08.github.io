@@ -18,7 +18,11 @@ body {
 }
 
 .navbar-nav {
-    background: var(--bg);
+    background-color: var(--bg);
+    background-image: url("images/pink-nav.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 30px;
 }
 
