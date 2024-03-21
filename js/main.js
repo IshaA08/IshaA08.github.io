@@ -5,4 +5,8 @@ var ready = (callback) => {
 }
 ready(() => {
     document.querySelector(".header").style.height = window.innerHeight + "px";
+    document.querySelector("#about").style.height = window.innerHeight + "px";
+    document.querySelector("#experience").style.height = window.innerHeight + "px";
+    document.querySelector("#skills").style.height = window.innerHeight + "px";
+    document.querySelector("#contact").style.height = window.innerHeight + "px";
 })

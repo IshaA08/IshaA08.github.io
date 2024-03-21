@@ -13,10 +13,6 @@ body {
     background: var(--bg);
 }
 
-.navbar {
-    background: var(--primary);
-}
-
 .navbar-nav {
     /* Set a background image within the nav bar */
     background-image: url("images/pink-nav.png");
@@ -54,7 +50,7 @@ body {
 }
 
 .header {
-    background-image: url("images/bg.jpg");
+    background-color: var(--bg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -68,6 +64,10 @@ body {
     text-align: center;
 }
 
+h1 {
+    text-align: center;
+}
+
 .herotext h1 {
     color: var(--font);
 }
@@ -76,4 +76,20 @@ body {
     color: var(--font);
     font-size: 1.3rem;
     line-height: 1.5;
+}
+
+#about {
+    background-color: var(--primary);
+}
+
+#experience {
+    background-color: var(--bg);
+}
+
+#skills {
+    background-color: var(--primary);
+}
+
+#contact {
+    background-color: var(--bg);
 }
