@@ -51,7 +51,19 @@ body {
 
 .container {
     position: relative;
-    margin-top: 10px;
+    margin-top: 50px;
+}
+
+.leftsocials {
+    margin-top: 300px;
+}
+
+.rightsocials {
+    margin-top: 300px;
+}
+
+.sticky-top {
+    top: 300px;
 }
 
 .header {
