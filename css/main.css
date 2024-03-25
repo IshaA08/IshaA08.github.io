@@ -78,6 +78,7 @@ h1 {
     color: var(--font);
 }
 
+
 .intro {
     left: 50%;
     position: absolute;
@@ -111,17 +112,21 @@ h1 {
 }
 
 #about {
+    padding-top: 30px;
     background-color: var(--primary);
 }
 
 #experience {
+    padding-top: 30px;
     background-color: var(--bg);
 }
 
 #skills {
+    padding-top: 30px;
     background-color: var(--primary);
 }
 
 #contact {
+    padding-top: 30px;
     background-color: var(--bg);
 }
