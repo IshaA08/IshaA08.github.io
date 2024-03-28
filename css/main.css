@@ -54,16 +54,42 @@ body {
     margin-top: 50px;
 }
 
-.leftsocials {
-    margin-top: 300px;
+.leftsocials,
+.rightsocials {
+    margin-top: 250px;
 }
 
-.rightsocials {
-    margin-top: 300px;
+.leftsocials ul li img,
+.rightsocials ul li img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
 }
 
 .sticky-top {
-    top: 300px;
+    top: 250px;
+}
+
+ul {
+    list-style-type: none;
+    background-color: var(--secondary);
+}
+
+#hackerrank,
+#linkedin {
+    height: 45px;
+    width: 45px;
+}
+
+#email {
+    height: 30px;
+    width: 40px;
+}
+
+#arrow {
+    height: 40px;
+    width: 35px;
+    margin-top: 10px;
 }
 
 .header {
@@ -77,7 +103,6 @@ h1 {
     text-align: center;
     color: var(--font);
 }
-
 
 .intro {
     left: 50%;
