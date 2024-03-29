@@ -59,10 +59,6 @@ body {
     margin-top: 200px;
 }
 
-.leftsocials {
-    margin-top: 100px;
-}
-
 #left-icons {
     width: 60px;
     background-color: var(--accent);
@@ -86,8 +82,31 @@ body {
     box-shadow: -8px 8px 6px -6px #999;
 }
 
+#right-icons {
+    width: 60px;
+    background-color: var(--accent);
+    display: flex;
+    align-items: center;
+
+    /* Rounded corners */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+
+    /* Glass-like background */
+    background-image: url("images/sidebar-right.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Shadow effect */
+    -webkit-box-shadow: 8px 8px 6px -6px #999;
+    -moz-box-shadow: 8px 8px 6px -6px #999;
+    box-shadow: 8px 8px 6px -6px #999;
+}
+
 .leftsocials nav a img,
-.rightsocials ul li img {
+.rightsocials nav a img {
     width: 50px;
     height: 50px;
 }
@@ -96,23 +115,9 @@ body {
     top: 200px;
 }
 
-ul {
-    list-style-type: none;
-    background-color: var(--secondary);
-}
-
-ul nav {
-    color: var(--accent);
-}
-
 #hackerrank,
 #linkedin {
     height: 40px;
-    width: 40px;
-}
-
-#email {
-    height: 30px;
     width: 40px;
 }
 
