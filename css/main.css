@@ -63,13 +63,30 @@ body {
     margin-top: 100px;
 }
 
-#left-side {
+#left-icons {
+    width: 60px;
     background-color: var(--accent);
-    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+
+    /* Rounded corners */
     padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+
+    /* Glass-like background */
+    background-image: url("images/sidebar-left.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Shadow effect */
+    -webkit-box-shadow: -8px 8px 6px -6px #999;
+    -moz-box-shadow: -8px 8px 6px -6px #999;
+    box-shadow: -8px 8px 6px -6px #999;
 }
 
-.leftsocials .nav-link img,
+.leftsocials nav a img,
 .rightsocials ul li img {
     width: 50px;
     height: 50px;
@@ -90,8 +107,8 @@ ul nav {
 
 #hackerrank,
 #linkedin {
-    height: 45px;
-    width: 45px;
+    height: 40px;
+    width: 40px;
 }
 
 #email {
