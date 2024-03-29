@@ -13,6 +13,12 @@ body {
     background: var(--bg);
 }
 
+.container {
+    position: relative;
+    margin-top: 50px;
+}
+
+/* Main site navigation navbar */
 .navbar-nav {
     /* Set a background image within the nav bar */
     background-image: url("images/pink-nav.png");
@@ -49,16 +55,18 @@ body {
     justify-content: center;
 }
 
-.container {
-    position: relative;
-    margin-top: 50px;
-}
-
+/* Adjust positions of side bars to make sure they have
+   appropriate distance from the top of the page at all times */
 .leftsocials,
 .rightsocials {
     margin-top: 200px;
 }
 
+.sticky-top {
+    top: 200px;
+}
+
+/* Left and right side bar styling */
 #left-icons {
     width: 60px;
     background-color: var(--accent);
@@ -83,6 +91,7 @@ body {
 }
 
 #right-icons {
+    /* Set defaults: dimensions, color and items alignment */
     width: 60px;
     background-color: var(--accent);
     display: flex;
@@ -111,10 +120,7 @@ body {
     height: 50px;
 }
 
-.sticky-top {
-    top: 200px;
-}
-
+/* Further customize certain icons in the left and right side bars */
 #hackerrank,
 #linkedin {
     height: 40px;
@@ -122,11 +128,11 @@ body {
 }
 
 #arrow {
-    height: 40px;
-    width: 35px;
-    margin-top: 10px;
+    height: 35px;
+    width: 30px;
 }
 
+/* Main/Intro/Landing page */
 .header {
     background-color: var(--bg);
     background-size: cover;
@@ -171,21 +177,25 @@ h1 {
     opacity: 100%;
 }
 
+/* About section */
 #about {
     padding-top: 30px;
     background-color: var(--primary);
 }
 
+/* Experience section */
 #experience {
     padding-top: 30px;
     background-color: var(--bg);
 }
 
+/* Skills section */
 #skills {
     padding-top: 30px;
     background-color: var(--primary);
 }
 
+/* Contact section */
 #contact {
     padding-top: 30px;
     background-color: var(--bg);

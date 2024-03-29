@@ -15,14 +15,12 @@
     <!-- Site Navigation Bar -->
     <nav class="navbar navbar-expand-md fixed-top" role="navigation">
         <!-- Denote toggle button for collapsed menu -->
-        <!-- <a class="navbar-brand" href="#">IA</a> -->
         <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Navbar -->
         <div class="collapse navbar-collapse" id="main-navigation">
             <ul class="navbar-nav">
-                <!-- Navbar Items -->
                 <li class="nav-item">
                     <a class="nav-link" href="#">About</a>
                 </li>
@@ -45,10 +43,12 @@
     <!-- Main website content -->
     <div class="container">
 
-        <!-- Put everything in a row to ensure proper ordering -->
+        <!-- Put everything in a row to ensure proper ordering on page -->
+        <!-- This one row contains three things: the left side bar + main website
+            content + right side bar in a 1-10-1 space division -->
         <div class="row">
+            <!-- Left Side Bar: Contains links to main socials -->
             <div class="leftsocials col-lg-1 d-none d-md-block">
-                <!-- left bar -->
                 <nav class="flex-column sticky-top" id="left-icons">
                     <a class="nav-link" href="#">
                         <img src="css/images/logos-for-links/github.png" alt="GitHub logo and link">
@@ -66,6 +66,7 @@
                 </nav>
             </div>
 
+            <!-- Main Website Content: Contains home, about, exp, skills and contact sections -->
             <div class="col-lg-10">
                 <header id="home" class="page-header header container-fluid">
                     <div class="intro">
@@ -92,8 +93,8 @@
                 </section>
             </div>
 
+            <!-- Right Side Bar: Contains communication and display-related links and utility -->
             <div class="rightsocials col-lg-1 d-none d-md-block">
-                <!-- right bar -->
                 <nav class="flex-column sticky-top" id="right-icons">
                     <a class="nav-link" href="#">
                         <img src="css/images/logos-for-links/email.png" alt="Email icon and link" id="email">
