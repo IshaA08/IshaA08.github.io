@@ -195,8 +195,14 @@ h1 {
     background-color: var(--primary);
 }
 
+/* Services section */
+#services {
+    padding-top: 30px;
+    background-color: var(--bg);
+}
+
 /* Contact section */
 #contact {
     padding-top: 30px;
-    background-color: var(--bg);
+    background-color: var(--primary);
 }

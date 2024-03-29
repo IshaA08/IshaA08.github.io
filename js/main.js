@@ -8,5 +8,6 @@ ready(() => {
     document.querySelector("#about").style.height = window.innerHeight + "px";
     document.querySelector("#experience").style.height = window.innerHeight + "px";
     document.querySelector("#skills").style.height = window.innerHeight + "px";
+    document.querySelector("#services").style.height = window.innerHeight + "px";
     document.querySelector("#contact").style.height = window.innerHeight + "px";
 })
