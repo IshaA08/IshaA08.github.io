@@ -56,23 +56,36 @@ body {
 
 .leftsocials,
 .rightsocials {
-    margin-top: 250px;
+    margin-top: 200px;
 }
 
-.leftsocials ul li img,
+.leftsocials {
+    margin-top: 100px;
+}
+
+#left-side {
+    background-color: var(--accent);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.leftsocials .nav-link img,
 .rightsocials ul li img {
     width: 50px;
     height: 50px;
-    margin-bottom: 10px;
 }
 
 .sticky-top {
-    top: 250px;
+    top: 200px;
 }
 
 ul {
     list-style-type: none;
     background-color: var(--secondary);
+}
+
+ul nav {
+    color: var(--accent);
 }
 
 #hackerrank,
