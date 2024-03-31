@@ -2,7 +2,8 @@
     /* Color Palette */
 
     /* City windows */
-    --sky: #FFB7C5;
+    --sky-top: #ff879f;
+    --sky-bottom: #ffe3e9;
     --clouds: #ffece0;
     --stars: #FFB7C5;
     --buildings-row-one: #17002c;
@@ -24,4 +25,5 @@
     overflow: hidden;
     border: 2px #17002c;
     border-style: solid;
+    background-image: linear-gradient(to top, var(--sky-bottom) 0%, var(--sky-top) 100%);
 }
