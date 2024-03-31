@@ -14,10 +14,11 @@
 
 #city-in-window-left {
     height: 100%;
+    display: flex;
 }
 
 .sky-container {
-    position: absolute;
+    position: relative;
     margin-top: 75px;
     margin-left: 30px;
     width: 20%;
@@ -26,4 +27,54 @@
     border: 2px #17002c;
     border-style: solid;
     background-image: linear-gradient(to top, var(--sky-bottom) 0%, var(--sky-top) 100%);
+}
+
+.buildings-row-one {
+    /* Set dimensions and position of first, most leftmost building */
+    position: absolute;
+    background-color: var(--buildings-row-one);
+    width: 22%;
+    height: 40%;
+    bottom: 0%;
+
+    /* Use box shadows to generate repeating city pattern layout */
+    box-shadow:
+        150px 0 var(--buildings-row-one),
+        200px 0 var(--buildings-row-one),
+        250px 0 var(--buildings-row-one);
+}
+
+.buildings-row-one:before {
+    /* Set dimensions and position of smaller building, based on the first one */
+    content: "";
+    position: absolute;
+    background-color: var(--buildings-row-one);
+    width: 50%;
+    height: 50%;
+    bottom: 0%;
+    left: 100%;
+
+    /* Repeat the pattern of small buildings in the cityscape */
+    box-shadow:
+        95px 0 var(--buildings-row-one),
+        145px 0 var(--buildings-row-one),
+        190px 0 var(--buildings-row-one),
+        270px 0 var(--buildings-row-one);
+}
+
+.buildings-row-one:after {
+    /* Based a medium-sized building based on the first one */
+    content: "";
+    position: absolute;
+    background-color: var(--buildings-row-one);
+    width: 75%;
+    height: 75%;
+    bottom: 0%;
+    left: 155%;
+
+    /* Make a pattern of medium buildings showing up in the cityscape */
+    box-shadow:
+        120px 0 var(--buildings-row-one),
+        250px 0 var(--buildings-row-one),
+        300px 0 var(--buildings-row-one);
 }
