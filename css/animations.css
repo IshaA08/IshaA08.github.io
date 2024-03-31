@@ -1,0 +1,27 @@
+:root {
+    /* Color Palette */
+
+    /* City windows */
+    --sky: #FFB7C5;
+    --clouds: #ffece0;
+    --stars: #FFB7C5;
+    --buildings-row-one: #17002c;
+    --buildings-row-two: #5e4077;
+    --buildings-row-three: #9686a4;
+    --windows: #5d7dff;
+}
+
+#city-in-window-left {
+    height: 100%;
+}
+
+.sky-container {
+    position: absolute;
+    margin-top: 75px;
+    margin-left: 30px;
+    width: 20%;
+    height: 40%;
+    overflow: hidden;
+    border: 2px #17002c;
+    border-style: solid;
+}
