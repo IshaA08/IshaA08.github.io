@@ -9,10 +9,11 @@
     --buildings-row-one: #17002c;
     --buildings-row-two: #5e4077;
     --buildings-row-three: #9686a4;
-    --windows: #82c3ff;
+    --windows: #f3e16b;
+    --windows-dimmed: #f3e16b4d;
     --train: #001867;
     --train-track: #504957;
-    --train-windows: #82c3ff;
+    --train-windows: #f3e16b;
     --tester: #00c8ff;
 }
 
@@ -202,5 +203,49 @@
 
     to {
         left: 44px;
+    }
+}
+
+/* Windows for the first row of buildings */
+.windows-row-one {
+    position: absolute;
+    z-index: 3;
+    background-color: var(--buildings-row-one);
+    width: 100%;
+    height: 30px;
+    top: 25%;
+    box-shadow:
+        150px 0 var(--buildings-row-one),
+        200px 0 var(--buildings-row-one),
+        250px 0 var(--buildings-row-one);
+}
+
+.windows-row-one:before {
+    content: "";
+    position: absolute;
+    background-color: var(--windows);
+    width: 10px;
+    height: 10px;
+    top: 5px;
+    left: 5px;
+    box-shadow:
+        15px 0 var(--windows-dimmed),
+        150px 0 var(--windows),
+        200px 0 var(--windows-dimmed),
+        250px 0 var(--windows-dimmed);
+    animation: light 15s linear infinite 2s;
+}
+
+@keyframes light {
+    0% {
+        filter: brightness(.5);
+    }
+
+    50% {
+        filter: brightness(1.5);
+    }
+
+    100% {
+        filter: brightness(0.3);
     }
 }
