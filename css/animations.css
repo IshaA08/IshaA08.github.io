@@ -140,6 +140,7 @@
         260px 0 var(--train),
         -65px 0 var(--train);
     animation: move 10s linear infinite;
+    animation-timing-function: ease-out;
 }
 
 .train:before {
