@@ -8,7 +8,7 @@
     --stars: #FFB7C5;
     --buildings-row-one: #17002c;
     --buildings-row-two: #4f476d;
-    --buildings-row-three: #cb97da;
+    --buildings-row-three: #92899e;
     --windows: #f3e16b;
     --windows-dimmed: #f3e16b4d;
     --train: #001867;
@@ -257,7 +257,7 @@
     position: absolute;
     background-color: var(--buildings-row-two);
     width: 30%;
-    height: 50%;
+    height: 55%;
     bottom: 0%;
     z-index: 4;
     box-shadow:
@@ -332,4 +332,36 @@
         330px 35px rgba(255, 214, 10, .2),
         380px 40px rgba(255, 214, 10, .4);
     animation: light 10s linear infinite 3.2s;
+}
+
+.buildings-row-three {
+    position: absolute;
+    background-color: var(--buildings-row-three);
+    width: 18%;
+    height: 70%;
+    bottom: 0%;
+    z-index: 3;
+    box-shadow:
+        30px -15px var(--buildings-row-three),
+        65px 30px var(--buildings-row-three),
+        110px 0 var(--buildings-row-three),
+        135px -20px var(--buildings-row-three),
+        160px -10px var(--buildings-row-three);
+}
+
+.buildings-row-three:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: rgba(255, 214, 10, .1);
+    top: 5px;
+    left: 30px;
+    box-shadow:
+        12px 0 rgba(255, 214, 10, .1),
+        50px -15px rgba(255, 214, 10, .1),
+        60px -15px rgba(255, 214, 10, .1),
+        115px -15px rgba(255, 214, 10, .1),
+        140px -15px rgba(255, 214, 10, .1),
+        230px -5px rgba(255, 214, 10, .1);
 }
