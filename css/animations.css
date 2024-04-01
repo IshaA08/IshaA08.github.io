@@ -9,7 +9,10 @@
     --buildings-row-one: #17002c;
     --buildings-row-two: #5e4077;
     --buildings-row-three: #9686a4;
-    --windows: #5d7dff;
+    --windows: #82c3ff;
+    --train: #001867;
+    --train-track: #504957;
+    --train-windows: #82c3ff;
     --tester: #00c8ff;
 }
 
@@ -84,66 +87,112 @@
 
 .track {
     position: absolute;
-    background-color: var(--tester);
-    width: 90px;
+    background-color: var(--buildings-row-one);
+    width: 95px;
     height: 5px;
-    left: 50px;
+    left: 100%;
     bottom: 20%;
     z-index: 1;
 }
 
-
 .track:before {
     content: "";
     position: absolute;
-    background-color: var(--tester);
+    background-color: var(--train-track);
     width: 7px;
     height: 2.5px;
     top: 2px;
-    left: -9px;
-    box-shadow: 10px 0 #495057, 20px 0 #495057, 30px 0 #495057, 40px 0 #495057, 50px 0 #495057, 60px 0 #495057, 70px 0 #495057, 80px 0 #495057, 90px 0 #495057, 100px 0 #495057, 110px 0 #495057, 120px 0 #495057, 130px 0 #495057, 140px 0 #495057, 150px 0 #495057, 231px -50px #495057, 241px -50px #495057, 251px -50px #495057, 261px -50px #495057, 271px -50px #495057, 281px -50px #495057, 291px -50px #495057, 301px -50px #495057, 311px -50px #495057, 321px -50px #495057, 331px -50px #495057;
+    box-shadow:
+        10px 0 var(--train-track),
+        20px 0 var(--train-track),
+        30px 0 var(--train-track),
+        40px 0 var(--train-track),
+        50px 0 var(--train-track),
+        60px 0 var(--train-track),
+        70px 0 var(--train-track),
+        80px 0 var(--train-track),
+        90px 0 var(--train-track);
 }
 
 .train-container {
     z-index: 2;
     position: absolute;
-    width: 90px;
+    width: 95px;
     height: 100px;
     overflow: hidden;
-    left: 50px;
+    left: 100%;
 }
 
 .train {
     position: absolute;
-    background-color: #014f86;
+    background-color: var(--train);
     width: 60px;
     height: 25px;
     bottom: 35%;
     left: -100px;
-    box-shadow: 65px 0 #014f86, 130px 0 #014f86, 195px 0 #014f86, 260px 0 #014f86, -65px 0 #014f86;
+    box-shadow:
+        65px 0 var(--train),
+        130px 0 var(--train),
+        195px 0 var(--train),
+        260px 0 var(--train),
+        -65px 0 var(--train);
     animation: move 10s linear infinite;
 }
 
 .train:before {
     content: "";
     position: absolute;
-    background-color: #ffd60a;
+    background-color: var(--train-windows);
     width: 15px;
     height: 10px;
     left: 40px;
     top: 5px;
-    box-shadow: 65px 0 #ffd60a, -65px 0 #ffd60a, 130px 0 #ffd60a, 195px 0 #ffd60a, 260px 0 #ffd60a;
+    box-shadow:
+        65px 0 var(--train-windows),
+        -65px 0 var(--train-windows),
+        130px 0 var(--train-windows),
+        195px 0 var(--train-windows),
+        260px 0 var(--train-windows);
 }
 
 .train:after {
     content: "";
     position: absolute;
-    background-color: #ffd60a;
+    background-color: var(--train-windows);
     height: 5px;
     width: 5px;
     top: 5px;
     left: 7px;
-    box-shadow: 10px 0 #ffd60a, 75px 0 #ffd60a, 140px 0 #ffd60a, 20px 0 #ffd60a, 85px 0 #ffd60a, 150px 0 #ffd60a, 33px 12px #ffd60a, 98px 12px #ffd60a, 163px 12px #ffd60a, 43px 12px #ffd60a, 108px 12px #ffd60a, 173px 12px #ffd60a, 238px 12px #ffd60a, 303px 12px #ffd60a, 65px 0 #ffd60a, 130px 0 #ffd60a, 195px 0 #ffd60a, 260px 0 #ffd60a, -65px 0 #ffd60a, -55px 0 #ffd60a, -45px 0 #ffd60a, -32px 12px #ffd60a, -22px 12px #ffd60a, 228px 12px #ffd60a, 293px 12px #ffd60a, 215px 0 #ffd60a, 280px 0 #ffd60a, 205px 0 #ffd60a, 270px 0 #ffd60a;
+    box-shadow:
+        10px 0 var(--train-windows),
+        75px 0 var(--train-windows),
+        140px 0 var(--train-windows),
+        20px 0 var(--train-windows),
+        85px 0 var(--train-windows),
+        150px 0 var(--train-windows),
+        33px 12px var(--train-windows),
+        98px 12px var(--train-windows),
+        163px 12px var(--train-windows),
+        43px 12px var(--train-windows),
+        108px 12px var(--train-windows),
+        173px 12px var(--train-windows),
+        238px 12px var(--train-windows),
+        303px 12px var(--train-windows),
+        65px 0 var(--train-windows),
+        130px 0 var(--train-windows),
+        195px 0 var(--train-windows),
+        260px 0 var(--train-windows),
+        -65px 0 var(--train-windows),
+        -55px 0 var(--train-windows),
+        -45px 0 var(--train-windows),
+        -32px 12px var(--train-windows),
+        -22px 12px var(--train-windows),
+        228px 12px var(--train-windows),
+        293px 12px var(--train-windows),
+        215px 0 var(--train-windows),
+        280px 0 var(--train-windows),
+        205px 0 var(--train-windows),
+        270px 0 var(--train-windows);
 }
 
 @keyframes move {
