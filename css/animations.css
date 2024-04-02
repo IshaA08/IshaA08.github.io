@@ -11,7 +11,7 @@
     --buildings-row-three: #92899e;
     --windows: #f3e16b;
     --windows-dimmed: #f3e16b4d;
-    --train: #001867;
+    --train: #014f86;
     --train-track: #504957;
     --train-windows: #f3e16b;
     --tester: #00c8ff;
@@ -59,7 +59,7 @@
     position: absolute;
     background-color: var(--buildings-row-one);
     width: 50%;
-    height: 50%;
+    height: 58%;
     bottom: 0%;
     left: 100%;
 
@@ -236,7 +236,7 @@
         150px 0 var(--windows),
         200px 0 var(--windows-dimmed),
         250px 0 var(--windows-dimmed);
-    animation: light 15s linear infinite 2s;
+    animation: light 11s linear infinite 2s;
 }
 
 @keyframes light {
@@ -332,7 +332,7 @@
         225px 55px rgba(255, 214, 10, .2),
         330px 35px rgba(255, 214, 10, .2),
         380px 40px rgba(255, 214, 10, .4);
-    animation: light 10s linear infinite 3.2s;
+    animation: light 9s linear infinite 3.2s;
 }
 
 .buildings-row-three {
