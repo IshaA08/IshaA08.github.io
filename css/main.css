@@ -18,7 +18,9 @@ body {
     margin-top: 50px;
 }
 
-/* Main site navigation navbar */
+/***********************
+ Main Site Nav Bar
+************************/
 .navbar-nav {
     /* Set a background image within the nav bar */
     background-image: url("images/pink-nav.png");
@@ -55,8 +57,9 @@ body {
     justify-content: center;
 }
 
-/* Adjust positions of side bars to make sure they have
-   appropriate distance from the top of the page at all times */
+/*************************
+ Left and Right Side Bars
+**************************/
 .leftsocials,
 .rightsocials {
     margin-top: 200px;
@@ -66,7 +69,6 @@ body {
     top: 200px;
 }
 
-/* Left and right side bar styling */
 #left-icons {
     width: 60px;
     background-color: var(--accent);
@@ -120,7 +122,6 @@ body {
     height: 50px;
 }
 
-/* Further customize certain icons in the left and right side bars */
 #hackerrank,
 #linkedin {
     height: 40px;
@@ -132,7 +133,9 @@ body {
     width: 30px;
 }
 
-/* Main/Intro/Landing page */
+/***********************
+ Main/Intro Section
+************************/
 .header {
     background-color: var(--bg);
     background-size: cover;
@@ -179,31 +182,41 @@ h1 {
     opacity: 100%;
 }
 
-/* About section */
+/***********************
+ About Section
+************************/
 #about {
     padding-top: 30px;
     background-color: var(--primary);
 }
 
-/* Experience section */
+/***********************
+ Experience Section
+************************/
 #experience {
     padding-top: 30px;
     background-color: var(--bg);
 }
 
-/* Skills section */
+/***********************
+ Skills Section
+************************/
 #skills {
     padding-top: 30px;
     background-color: var(--primary);
 }
 
-/* Services section */
+/***********************
+ Services Section
+************************/
 #services {
     padding-top: 30px;
     background-color: var(--bg);
 }
 
-/* Contact section */
+/***********************
+ Contact Section
+************************/
 #contact {
     padding-top: 30px;
     background-color: var(--primary);

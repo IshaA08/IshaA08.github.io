@@ -20,11 +20,15 @@
 
 #animated-background {
     /* Make the container's height the same as the whole page,
-       then specify desired height percentage in the sky container */
+       then specify desired height percentage in the animation container */
     height: 100%;
     display: flex;
 }
 
+
+/***********************
+ City Windows Animation
+************************/
 .sky-container-left {
     position: relative;
     margin-top: 75px;
@@ -282,7 +286,6 @@
     }
 }
 
-/* Windows for the first row of buildings */
 .windows-row-one {
     position: absolute;
     z-index: 3;
@@ -326,7 +329,6 @@
     }
 }
 
-/* Second row of buildings */
 .buildings-row-two {
     position: absolute;
     background-color: var(--buildings-row-two);
@@ -438,3 +440,15 @@
         140px -15px rgba(255, 214, 10, .1),
         230px -5px rgba(255, 214, 10, .1);
 }
+
+/***********************
+ Work Desk Animation
+************************/
+
+/***********************
+ Wall Clock Animation
+************************/
+
+/***********************
+ Sun Rays Animation
+************************/
