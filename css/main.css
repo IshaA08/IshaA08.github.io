@@ -138,6 +138,7 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
+    border: 5px solid var(--font);
 }
 
 h1 {
@@ -151,6 +152,7 @@ h1 {
     top: 35%;
     transform: translate(-50%, -55%);
     text-align: center;
+    border: 5px solid var(--font);
 }
 
 .intro p {

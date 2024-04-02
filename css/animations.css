@@ -18,19 +18,14 @@
     --train-windows: #f3e16b;
 }
 
-#city-in-window-left {
+#animated-background {
     /* Make the container's height the same as the whole page,
        then specify desired height percentage in the sky container */
     height: 100%;
     display: flex;
 }
 
-#city-in-window-right {
-    height: 100%;
-    display: flex;
-}
-
-.sky-container {
+.sky-container-left {
     position: relative;
     margin-top: 75px;
     margin-left: 30px;
@@ -51,7 +46,7 @@
             var(--sky-top) 100%);
 }
 
-.sky-container:after {
+.sky-container-left:after {
     content: "";
     position: absolute;
     background-color: var(--stars-normal);
@@ -65,10 +60,52 @@
         300px -5px var(--stars-variation),
         370px 0 var(--stars-normal),
         75px 40px var(--stars-bright),
-        85px 5px var(--stars-normal),
+        60px 5px var(--stars-normal),
         40px 30px var(--stars-variation),
         140px -5px var(--stars-bright),
         250px 4px var(--stars-variation);
+    filter: drop-shadow(0 0 3px var(--stars-bright));
+}
+
+.sky-container-right {
+    position: relative;
+    width: 20%;
+    height: 40%;
+    margin-top: 75px;
+    margin-left: 53%;
+    overflow: hidden;
+
+    /* Window sill */
+    outline: 1.5px solid var(--window-sill);
+    -webkit-box-shadow: 0 10px 6px -6px #999;
+    -moz-box-shadow: 0 10px 6px -6px #999;
+    box-shadow: 0 10px 6px -6px #999;
+    border-radius: 2px;
+
+    /* Sky gradient */
+    background-image: linear-gradient(to top,
+            var(--sky-bottom) 0%,
+            var(--sky-top) 100%);
+}
+
+.sky-container-right:after {
+    content: "";
+    position: absolute;
+    background-color: var(--stars-normal);
+    width: 2px;
+    height: 2px;
+    top: 5%;
+    left: 5%;
+    box-shadow:
+        95px -5px var(--stars-variation),
+        205px 10px var(--stars-normal),
+        313px -5px var(--stars-variation),
+        370px 0 var(--stars-normal),
+        70px 40px var(--stars-bright),
+        80px 6px var(--stars-variation),
+        40px 30px var(--stars-normal),
+        142px -5px var(--stars-bright),
+        245px 4px var(--stars-variation);
     filter: drop-shadow(0 0 3px var(--stars-bright));
 }
 
