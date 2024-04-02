@@ -2,6 +2,7 @@
     /* Color Palette */
 
     /* City windows */
+    --window-sill: #596475;
     --sky-top: #ff879f;
     --sky-bottom: #ffe3e9;
     --stars-bright: #ffafc7;
@@ -15,12 +16,16 @@
     --train: #014f86;
     --train-track: #504957;
     --train-windows: #f3e16b;
-    --tester: #00c8ff;
 }
 
 #city-in-window-left {
     /* Make the container's height the same as the whole page,
        then specify desired height percentage in the sky container */
+    height: 100%;
+    display: flex;
+}
+
+#city-in-window-right {
     height: 100%;
     display: flex;
 }
@@ -32,8 +37,15 @@
     width: 20%;
     height: 40%;
     overflow: hidden;
-    border: 2px #17002c;
-    border-style: solid;
+
+    /* Window sill */
+    outline: 1.5px solid var(--window-sill);
+    -webkit-box-shadow: 0 10px 6px -6px #999;
+    -moz-box-shadow: 0 10px 6px -6px #999;
+    box-shadow: 0 10px 6px -6px #999;
+    border-radius: 2px;
+
+    /* Sky gradient */
     background-image: linear-gradient(to top,
             var(--sky-bottom) 0%,
             var(--sky-top) 100%);
