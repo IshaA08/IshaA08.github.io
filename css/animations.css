@@ -4,8 +4,9 @@
     /* City windows */
     --sky-top: #ff879f;
     --sky-bottom: #ffe3e9;
-    --clouds: #ffece0;
-    --stars: #FFB7C5;
+    --stars-bright: #ffafc7;
+    --stars-normal: #ffbbd4e1;
+    --stars-variation: #ffffffb3;
     --buildings-row-one: #17002c;
     --buildings-row-two: #4f476d;
     --buildings-row-three: #92899e;
@@ -33,7 +34,30 @@
     overflow: hidden;
     border: 2px #17002c;
     border-style: solid;
-    background-image: linear-gradient(to top, var(--sky-bottom) 0%, var(--sky-top) 100%);
+    background-image: linear-gradient(to top,
+            var(--sky-bottom) 0%,
+            var(--sky-top) 100%);
+}
+
+.sky-container:after {
+    content: "";
+    position: absolute;
+    background-color: var(--stars-normal);
+    width: 2px;
+    height: 2px;
+    top: 5%;
+    left: 5%;
+    box-shadow:
+        100px -5px var(--stars-variation),
+        200px 10px var(--stars-normal),
+        300px -5px var(--stars-variation),
+        370px 0 var(--stars-normal),
+        75px 40px var(--stars-bright),
+        85px 5px var(--stars-normal),
+        40px 30px var(--stars-variation),
+        140px -5px var(--stars-bright),
+        250px 4px var(--stars-variation);
+    filter: drop-shadow(0 0 3px var(--stars-bright));
 }
 
 .buildings-row-one {
