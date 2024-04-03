@@ -445,10 +445,28 @@
 /***********************
  Work Desk Animation
 ************************/
+.desk-container {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    outline: 2px solid var(--buildings-row-one);
+    bottom: 0%;
+    left: 25%;
+    z-index: 15;
+}
 
 /***********************
  Wall Clock Animation
 ************************/
+.clock-container {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    outline: 2px solid var(--buildings-row-one);
+    top: 0%;
+    left: 45%;
+    z-index: 15;
+}
 
 /***********************
  Sun Rays Animation
