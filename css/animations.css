@@ -32,16 +32,17 @@
 .sky-container-left {
     position: relative;
     margin-top: 75px;
-    margin-left: 30px;
+    margin-left: 20%;
+    margin-right: 5px;
     width: 20%;
     height: 40%;
     overflow: hidden;
 
     /* Window sill */
-    outline: 1.5px solid var(--window-sill);
-    -webkit-box-shadow: 0 10px 6px -6px #999;
-    -moz-box-shadow: 0 10px 6px -6px #999;
-    box-shadow: 0 10px 6px -6px #999;
+    outline: 2px solid var(--window-sill);
+    -webkit-box-shadow: 0 15px 6px -6px #999;
+    -moz-box-shadow: 0 15px 6px -6px #999;
+    box-shadow: 0 15px 6px -6px #999;
     border-radius: 2px;
 
     /* Sky gradient */
@@ -76,14 +77,14 @@
     width: 20%;
     height: 40%;
     margin-top: 75px;
-    margin-left: 53%;
+    margin-right: 5px;
     overflow: hidden;
 
     /* Window sill */
-    outline: 1.5px solid var(--window-sill);
-    -webkit-box-shadow: 0 10px 6px -6px #999;
-    -moz-box-shadow: 0 10px 6px -6px #999;
-    box-shadow: 0 10px 6px -6px #999;
+    outline: 2px solid var(--window-sill);
+    -webkit-box-shadow: 0 15px 6px -6px #999;
+    -moz-box-shadow: 0 15px 6px -6px #999;
+    box-shadow: 0 15px 6px -6px #999;
     border-radius: 2px;
 
     /* Sky gradient */
