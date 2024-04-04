@@ -1,7 +1,7 @@
 :root {
-    /* Color Palette */
+    /* Color Palettes */
 
-    /* City windows */
+    /* City Scenery */
     --window-sill: #596475;
     --sky-top: #ff879f;
     --sky-bottom: #ffe3e9;
@@ -16,6 +16,17 @@
     --train: #014f86;
     --train-track: #504957;
     --train-windows: #f3e16b;
+
+    /* Work Desk */
+    --desk-stroke: #10001f;
+    --desk-fill: #8b8d9d;
+    --desk-shadow: #535161;
+    --desk-highlight: #b8b4bfe5;
+    --laptop-line-primary: #e8c85e;
+    --laptop-line-alternate: #358c68;
+    --leptop-highlight: #EBE7E7;
+    --cup-fill: #a79b9b;
+    --cup-smoke: #aaa3a3;
 }
 
 #animated-background {
@@ -218,7 +229,7 @@
         260px 0 var(--train),
         -65px 0 var(--train);
     animation: move 10s linear infinite;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-in-out;
 }
 
 .train:before {
@@ -450,8 +461,100 @@
     width: 50%;
     height: 50%;
     outline: 2px solid var(--buildings-row-one);
-    bottom: 0%;
+    border-bottom: 5px solid var(--desk-stroke);
+    bottom: 1%;
     left: 25%;
+    z-index: 15;
+}
+
+.desk {
+    position: absolute;
+    width: 90%;
+    height: 60%;
+    bottom: 0%;
+    left: 5%;
+    border: 1px solid var(--buildings-row-one);
+    z-index: 15;
+}
+
+.tabletop {
+    position: absolute;
+    width: 100%;
+    height: 13%;
+    top: 0%;
+    border: 4px solid var(--desk-stroke);
+    background-color: var(--desk-fill);
+    box-shadow:
+        inset 0 4px var(--desk-highlight);
+}
+
+.tableleg {
+    position: absolute;
+    width: 7%;
+    height: 87%;
+    top: 13%;
+    left: 3%;
+    border: 4px solid var(--desk-stroke);
+    background-color: var(--desk-fill);
+    box-shadow:
+        inset 0 6px var(--desk-shadow);
+}
+
+.drawer-left {
+    position: absolute;
+    width: 35%;
+    height: 17%;
+    top: 13%;
+    left: 10%;
+    border: 4px solid var(--desk-stroke);
+    background-color: var(--desk-fill);
+    box-shadow:
+        inset 0 6px var(--desk-shadow);
+}
+
+.drawer-right {
+    position: absolute;
+    width: 35%;
+    height: 17%;
+    top: 13%;
+    left: 45%;
+    border: 4px solid var(--desk-stroke);
+    background-color: var(--desk-fill);
+    box-shadow:
+        inset 0 6px var(--desk-shadow);
+}
+
+.cabinet {
+    position: absolute;
+    width: 19%;
+    height: 87%;
+    top: 13%;
+    left: 80%;
+    border: 4px solid var(--desk-stroke);
+    background-color: var(--desk-fill);
+    box-shadow:
+        inset 0 6px var(--desk-shadow);
+}
+
+.cabinet:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 25%;
+    background-color: var(--desk-stroke);
+    box-shadow:
+        0 35px var(--desk-stroke),
+        0 70px var(--desk-stroke);
+}
+
+.work-items {
+    position: absolute;
+    width: 90%;
+    height: 30%;
+    bottom: 60%;
+    left: 5%;
+    border: 1px solid var(--desk-stroke);
     z-index: 15;
 }
 
