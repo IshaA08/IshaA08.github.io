@@ -23,8 +23,11 @@
     --desk-shadow: #535161;
     --desk-highlight: #b8b4bfe5;
     --laptop-line-primary: #e8c85e;
-    --laptop-line-alternate: #358c68;
-    --leptop-highlight: #EBE7E7;
+    --laptop-line-alternate: #5f77c7;
+    --laptop-highlight: #EBE7E7;
+    --book-color-second: #337b4d;
+    --book-highlight: #559c6f;
+    --book-highlight-second: #21699c;
     --cup-fill: #a79b9b;
     --cup-smoke: #aaa3a3;
 }
@@ -556,6 +559,161 @@
     left: 5%;
     border: 1px solid var(--desk-stroke);
     z-index: 15;
+}
+
+.books {
+    position: absolute;
+    width: 20%;
+    height: 80%;
+    left: 1%;
+    bottom: 0%;
+    border: 1px solid var(--desk-stroke);
+}
+
+.book-1 {
+    position: absolute;
+    width: 90%;
+    height: 25%;
+    border: 3px solid var(--desk-stroke);
+    background-color: var(--sky-top);
+    bottom: 0%;
+    left: 0%;
+    box-shadow:
+        inset 0 3px var(--stars-bright);
+}
+
+.book-1:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    border: 3px solid var(--desk-stroke);
+    background-color: var(--train-track);
+    bottom: 100%;
+    left: 20%;
+    box-shadow: inset 0 3px var(--window-sill);
+}
+
+.book-2 {
+    position: absolute;
+    width: 90%;
+    height: 25%;
+    border: 3px solid var(--desk-stroke);
+    background-color: var(--book-color-second);
+    bottom: 45%;
+    left: 3%;
+    box-shadow:
+        inset 0 3px var(--book-highlight);
+}
+
+.book-2:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    border: 3px solid var(--desk-stroke);
+    background-color: var(--train);
+    bottom: 100%;
+    left: 10%;
+    box-shadow: inset 0 3px var(--book-highlight-second);
+}
+
+.screen {
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    left: 23%;
+    bottom: 10%;
+    border: 4px solid var(--desk-stroke);
+    background-color: var(--desk-shadow);
+}
+
+.screen:after {
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 20%;
+    left: 32.5%;
+    top: 100%;
+    background-color: var(--desk-stroke);
+}
+
+.screen:before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 10%;
+    left: 25%;
+    top: 110%;
+    background-color: var(--desk-stroke);
+}
+
+.screen-lines {
+    position: absolute;
+    width: 75%;
+    height: 4px;
+    top: 15%;
+    left: 12.5%;
+    background-color: var(--laptop-line-primary);
+    box-shadow:
+        0 10px var(--laptop-line-alternate),
+        0 20px var(--laptop-line-primary),
+        0 30px var(--laptop-line-alternate),
+        0 40px var(--laptop-line-primary);
+}
+
+.laptop {
+    position: absolute;
+    width: 28%;
+    height: 75%;
+    left: 55%;
+    bottom: 10%;
+    border: 4px solid var(--desk-stroke);
+    background-color: var(--desk-shadow);
+}
+
+.laptop:after {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 25%;
+    top: 100%;
+    left: -10%;
+    border: 4px solid var(--desk-stroke);
+    background-color: var(--laptop-highlight);
+}
+
+.laptop-lines {
+    position: absolute;
+    width: 75%;
+    height: 4px;
+    top: 20%;
+    left: 12.5%;
+    background-color: var(--laptop-line-primary);
+    box-shadow:
+        0 10px var(--sky-top),
+        0 20px var(--laptop-line-primary),
+        0 30px var(--sky-top);
+}
+
+.cup {
+    position: absolute;
+    width: 7%;
+    height: 40%;
+    right: 3%;
+    bottom: 0%;
+    border: 4px solid var(--desk-stroke);
+    background-color: var(--cup-fill);
+}
+
+.cup:after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    left: 100%;
+    border: 5px solid var(--desk-stroke);
+    border-radius: 10px;
 }
 
 /***********************
