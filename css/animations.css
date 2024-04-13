@@ -51,7 +51,6 @@
 .sky-container-left {
     position: relative;
     margin-top: 75px;
-    margin-left: 20%;
     margin-right: 5px;
     width: 20%;
     height: 40%;
@@ -653,7 +652,7 @@
     background-color: var(--desk-stroke);
 }
 
-.screen-lines {
+.screen-lines-primary {
     position: absolute;
     width: 75%;
     height: 4px;
@@ -661,10 +660,19 @@
     left: 12.5%;
     background-color: var(--laptop-line-primary);
     box-shadow:
-        0 10px var(--laptop-line-alternate),
         0 20px var(--laptop-line-primary),
-        0 30px var(--laptop-line-alternate),
         0 40px var(--laptop-line-primary);
+}
+
+.screen-lines-alt {
+    position: absolute;
+    width: 75%;
+    height: 4px;
+    top: 30%;
+    left: 12.5%;
+    background-color: var(--laptop-line-alternate);
+    box-shadow:
+        0 20px var(--laptop-line-alternate);
 }
 
 .laptop {
@@ -688,17 +696,47 @@
     background-color: var(--laptop-highlight);
 }
 
-.laptop-lines {
+.laptop-lines-primary {
     position: absolute;
     width: 75%;
     height: 4px;
     top: 20%;
     left: 12.5%;
-    background-color: var(--laptop-line-primary);
+    background-color: var(--sky-top);
     box-shadow:
-        0 10px var(--sky-top),
-        0 20px var(--laptop-line-primary),
-        0 30px var(--sky-top);
+        0 20px var(--sky-top);
+    animation: writing 6s 0s linear infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.laptop-lines-alt {
+    position: absolute;
+    width: 0%;
+    height: 4px;
+    top: 40%;
+    left: 12.5%;
+    background-color: var(--sky-top);
+    box-shadow:
+        0 20px var(--sky-top);
+    animation: writing 7s 0.5s linear infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes writing {
+    0% {
+        width: 0%;
+        opacity: 1;
+    }
+
+    50% {
+        width: 75%;
+        opacity: 1;
+    }
+
+    100% {
+        width: 75%;
+        opacity: 1;
+    }
 }
 
 .cup {

@@ -152,7 +152,7 @@ h1 {
 .intro {
     left: 50%;
     position: absolute;
-    top: 25%;
+    top: 35%;
     transform: translate(-50%, -55%);
     text-align: center;
     border: 5px solid var(--font);
