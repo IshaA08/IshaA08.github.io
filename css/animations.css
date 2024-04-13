@@ -30,6 +30,11 @@
     --book-highlight-second: #21699c;
     --cup-fill: #a79b9b;
     --cup-smoke: #aaa3a3;
+
+    /* Wall Clock */
+    --second: 1s;
+    --minute: calc(var(--second) * 60);
+    --hour: calc(var(--minute) * 60);
 }
 
 #animated-background {
@@ -723,11 +728,47 @@
     position: absolute;
     width: 70px;
     height: 70px;
-    outline: 2px solid var(--buildings-row-one);
+    outline: 1px solid var(--buildings-row-one);
     top: 0%;
     left: 45%;
     z-index: 15;
+    border-radius: 50%;
+    background-color: var(--desk-highlight);
+    -webkit-box-shadow: 0 10px 6px -6px #999;
+    -moz-box-shadow: 0 10px 6px -6px #999;
+    box-shadow: 0 10px 6px -6px #999;
 }
+
+.hand {
+    width: 50%;
+    right: 50%;
+    height: 6px;
+    background: var(--sky-top);
+    position: absolute;
+    top: 50%;
+    border-radius: 6px;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hand.hour-hand {
+    width: 30%;
+    z-index: 3;
+}
+
+.hand.min-hand {
+    height: 3px;
+    z-index: 10;
+    width: 40%;
+}
+
+.hand.second-hand {
+    background: var(--buildings-row-two);
+    width: 45%;
+    height: 2px;
+}
+
 
 /***********************
  Sun Rays Animation
