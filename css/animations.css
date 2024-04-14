@@ -519,6 +519,16 @@
         inset 0 6px var(--desk-shadow);
 }
 
+.drawer-left:before {
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 4px;
+    background-color: var(--desk-stroke);
+    left: 37.5%;
+    top: 33%;
+}
+
 .drawer-right {
     position: absolute;
     width: 35%;
@@ -529,6 +539,16 @@
     background-color: var(--desk-fill);
     box-shadow:
         inset 0 6px var(--desk-shadow);
+}
+
+.drawer-right:before {
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 4px;
+    background-color: var(--desk-stroke);
+    left: 37.5%;
+    top: 33%;
 }
 
 .cabinet {
@@ -553,6 +573,20 @@
     box-shadow:
         0 35px var(--desk-stroke),
         0 70px var(--desk-stroke);
+}
+
+.cabinet:before {
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 4px;
+    background-color: var(--desk-stroke);
+    left: 37.5%;
+    top: 12.5%;
+    box-shadow:
+        0 35px var(--desk-stroke),
+        0 70px var(--desk-stroke),
+        0 100px var(--desk-stroke);
 }
 
 .work-items {
@@ -705,7 +739,7 @@
     background-color: var(--sky-top);
     box-shadow:
         0 20px var(--sky-top);
-    animation: writing 6s 0s linear infinite;
+    animation: writing 5s 0s linear infinite;
     animation-timing-function: ease-in-out;
 }
 
@@ -718,7 +752,7 @@
     background-color: var(--sky-top);
     box-shadow:
         0 20px var(--sky-top);
-    animation: writing 7s 0.5s linear infinite;
+    animation: writing 5s 0.1s linear infinite;
     animation-timing-function: ease-in-out;
 }
 
@@ -728,7 +762,7 @@
         opacity: 1;
     }
 
-    50% {
+    70% {
         width: 75%;
         opacity: 1;
     }
@@ -771,7 +805,8 @@
     box-shadow:
         6px -5px var(--cup-smoke),
         12px 0 var(--cup-smoke);
-    animation: cooling 10s linear infinite;
+    animation: cooling 7s linear infinite;
+    animation-timing-function: ease-in;
 }
 
 @keyframes cooling {
@@ -799,6 +834,10 @@
     z-index: 15;
     border-radius: 50%;
     background-color: var(--desk-highlight);
+    background-image: url(images/clock-face.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     -webkit-box-shadow: 0 10px 6px -6px #999;
     -moz-box-shadow: 0 10px 6px -6px #999;
     box-shadow: 0 10px 6px -6px #999;
@@ -817,18 +856,18 @@
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
 
-.hand.hour-hand {
+.hour-hand {
     width: 30%;
     z-index: 3;
 }
 
-.hand.min-hand {
+.min-hand {
     height: 3px;
     z-index: 10;
     width: 40%;
 }
 
-.hand.second-hand {
+.second-hand {
     background: var(--buildings-row-two);
     width: 45%;
     height: 2px;
