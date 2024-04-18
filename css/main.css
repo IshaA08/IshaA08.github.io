@@ -187,8 +187,74 @@ h1 {
  About Section
 ************************/
 #about {
+    height: auto;
     padding-top: 30px;
     background-color: var(--primary);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 90px;
+}
+
+#about .about-portrait {
+    width: 150px;
+    height: 350px;
+    margin-top: 50px;
+}
+
+#about .about-socials {
+    width: 500px;
+    height: 400px;
+}
+
+#about p {
+    text-align: left;
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 40px;
+}
+
+.about-social-links {
+    list-style: none;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.about-social-links li {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.about-social-links li a {
+    display: block;
+    width: 75px;
+    height: 75px;
+    border: 2px solid var(--font);
+    border-radius: 50%;
+}
+
+.socials-github {
+    background-image: url(images/logos-for-links/github.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.socials-linkedin {
+    background-image: url(images/logos-for-links/linkedin.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.socials-stackoverflow {
+    background-image: url(images/logos-for-links/stackoverflow.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /***********************
