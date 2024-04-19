@@ -18,6 +18,11 @@ body {
     margin-top: 50px;
 }
 
+h1 {
+    text-align: center;
+    color: var(--font);
+}
+
 /***********************
  Main Site Nav Bar
 ************************/
@@ -143,9 +148,7 @@ body {
     position: relative;
 }
 
-h1 {
-    text-align: center;
-    color: var(--font);
+.intro h1 {
     text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
 }
 
@@ -277,8 +280,51 @@ h2 {
  Experience Section
 ************************/
 #experience {
+    height: auto;
     padding-top: 30px;
     background-color: var(--bg);
+}
+
+#experience .subtitle {
+    text-align: center;
+}
+
+.timeline-with-icons {
+    border-left: 1px solid var(--font);
+    position: relative;
+    list-style: none;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.timeline-with-icons .timeline-item {
+    position: relative;
+}
+
+.timeline-with-icons .timeline-item:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+.timeline-with-icons .timeline-icon {
+    position: absolute;
+    left: -48px;
+    background-color: var(--font);
+    border-radius: 50%;
+    height: 31px;
+    width: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-1 {
+    height: 100%;
+    width: 100%;
+    background-image: url(images/main-portrait.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /***********************
