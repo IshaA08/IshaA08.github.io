@@ -290,7 +290,7 @@ h2 {
 }
 
 .timeline-with-icons {
-    border-left: 1px solid var(--font);
+    border-left: 1px solid var(--secondary);
     position: relative;
     list-style: none;
     margin-left: 60px;
@@ -310,7 +310,7 @@ h2 {
 .timeline-with-icons .timeline-icon {
     position: absolute;
     left: -48px;
-    background-color: var(--font);
+    background-color: var(--secondary);
     border-radius: 50%;
     height: 31px;
     width: 31px;
@@ -322,8 +322,54 @@ h2 {
 .icon-1 {
     height: 100%;
     width: 100%;
-    background-image: url(images/main-portrait.png);
+    background-image: url(images/timeline-icons/school.png);
     background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.icon-2 {
+    height: 100%;
+    width: 100%;
+    background-image: url(images/timeline-icons/dev.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.icon-3 {
+    height: 100%;
+    width: 100%;
+    background-image: url(images/timeline-icons/group.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.icon-4 {
+    height: 100%;
+    width: 100%;
+    background-image: url(images/timeline-icons/grad.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.icon-5 {
+    height: 100%;
+    width: 100%;
+    background-image: url(images/timeline-icons/pointer.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.icon-6 {
+    height: 100%;
+    width: 100%;
+    background-image: url(images/timeline-icons/seo.png);
+    background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
