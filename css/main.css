@@ -5,6 +5,7 @@
     --primary: #FFB7C5;
     --secondary: #6BA368;
     --accent: #596475;
+    --timeline: #98b8c5;
 }
 
 body {
@@ -290,7 +291,7 @@ h2 {
 }
 
 .timeline-with-icons {
-    border-left: 1px solid var(--secondary);
+    border-left: 1px solid var(--timeline);
     position: relative;
     list-style: none;
     margin-left: 60px;
@@ -310,7 +311,7 @@ h2 {
 .timeline-with-icons .timeline-icon {
     position: absolute;
     left: -48px;
-    background-color: var(--secondary);
+    background-color: var(--timeline);
     border-radius: 50%;
     height: 31px;
     width: 31px;
@@ -331,7 +332,7 @@ h2 {
 .icon-2 {
     height: 100%;
     width: 100%;
-    background-image: url(images/timeline-icons/dev.png);
+    background-image: url(images/timeline-icons/pointer.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -356,15 +357,6 @@ h2 {
 }
 
 .icon-5 {
-    height: 100%;
-    width: 100%;
-    background-image: url(images/timeline-icons/pointer.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.icon-6 {
     height: 100%;
     width: 100%;
     background-image: url(images/timeline-icons/seo.png);
