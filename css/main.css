@@ -375,6 +375,10 @@ h2 {
     padding-bottom: 30px;
 }
 
+#skills p {
+    text-align: center;
+}
+
 #skills .card {
     background-color: var(--primary);
     text-align: center;
@@ -404,6 +408,10 @@ h5 {
 #services {
     padding-top: 30px;
     background-color: var(--bg);
+}
+
+#services p {
+    text-align: center;
 }
 
 /***********************
