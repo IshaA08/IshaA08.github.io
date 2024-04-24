@@ -174,7 +174,7 @@ h1 {
     height: 100px;
     border-radius: 50%;
     border: 2px solid var(--font);
-    background-color: var(--accent);
+    background-color: var(--timeline);
     background-image: url(images/main-portrait.png);
     background-size: contain;
     background-position: center;
@@ -406,12 +406,33 @@ h5 {
  Services Section
 ************************/
 #services {
+    height: auto;
     padding-top: 30px;
     background-color: var(--bg);
+    padding-bottom: 30px;
 }
 
 #services p {
     text-align: center;
+}
+
+#services .row {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#services .card {
+    background-color: var(--bg);
+    text-align: center;
+    box-shadow: -1px 3px 4px var(--timeline);
+}
+
+#services .card img {
+    width: 120px;
+    height: 115px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
 }
 
 /***********************
