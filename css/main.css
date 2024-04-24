@@ -441,4 +441,15 @@ h5 {
 #contact {
     padding-top: 30px;
     background-color: var(--primary);
+    height: auto;
+}
+
+#contact h5 {
+    text-align: center;
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 26rem;
 }

@@ -582,6 +582,41 @@
                 <!-- Contact section -->
                 <section id="contact">
                     <h1>Contact</h1>
+                    <form>
+                        <h5>Get In Touch</h5>
+                        <!-- Name input -->
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <input type="text" id="formFirstName" class="form-control" />
+                            <label class="form-label" for="formFirstName">First Name</label>
+                        </div>
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <input type="text" id="formLastName" class="form-control" />
+                            <label class="form-label" for="formLastName">Last Name</label>
+                        </div>
+
+                        <!-- Email input -->
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <input type="email" id="formEmail" class="form-control" />
+                            <label class="form-label" for="formEmail">Email address</label>
+                        </div>
+
+                        <!-- Message input -->
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <textarea class="form-control" id="formMessage" rows="4"></textarea>
+                            <label class="form-label" for="formMessage">Message</label>
+                        </div>
+
+                        <!-- Checkbox -->
+                        <div class="form-check d-flex justify-content-center mb-4">
+                            <input class="form-check-input me-2" type="checkbox" value="" id="formCopyCheck" checked />
+                            <label class="form-check-label" for="formCopyCheck">
+                                Send me a copy of this message
+                            </label>
+                        </div>
+
+                        <!-- Submit button -->
+                        <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4">Send</button>
+                    </form>
                 </section>
             </div>
 

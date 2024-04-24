@@ -5,7 +5,6 @@ var ready = (callback) => {
 }
 ready(() => {
     document.querySelector(".header").style.height = window.innerHeight + "px";
-    document.querySelector("#contact").style.height = window.innerHeight + "px";
 })
 
 /* Analog wall clock */
@@ -32,3 +31,5 @@ function setDate() {
 setInterval(setDate, 1000);
 
 setDate();
+
+/* Contact Form */
