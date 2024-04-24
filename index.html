@@ -582,40 +582,43 @@
                 <!-- Contact section -->
                 <section id="contact">
                     <h1>Contact</h1>
-                    <form>
+                    <form action="https://formsubmit.co/isha_afzaal8@outlook.com" method="POST">
                         <h5>Get In Touch</h5>
                         <!-- Name input -->
-                        <div data-mdb-input-init class="form-outline mb-4">
-                            <input type="text" id="formFirstName" class="form-control" />
-                            <label class="form-label" for="formFirstName">First Name</label>
-                        </div>
-                        <div data-mdb-input-init class="form-outline mb-4">
-                            <input type="text" id="formLastName" class="form-control" />
-                            <label class="form-label" for="formLastName">Last Name</label>
+                        <div class="row">
+                            <div class="col">
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <input type="text" name="firstName" id="formFirstName" class="form-control"
+                                        required />
+                                    <label class="form-label" for="formFirstName">First Name</label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <input type="text" name="lastName" id="formLastName" class="form-control" />
+                                    <label class="form-label" for="formLastName">Last Name</label>
+                                </div>
+                            </div>
                         </div>
 
                         <!-- Email input -->
                         <div data-mdb-input-init class="form-outline mb-4">
-                            <input type="email" id="formEmail" class="form-control" />
+                            <input type="email" name="email" id="formEmail" class="form-control" required />
                             <label class="form-label" for="formEmail">Email address</label>
                         </div>
 
                         <!-- Message input -->
                         <div data-mdb-input-init class="form-outline mb-4">
-                            <textarea class="form-control" id="formMessage" rows="4"></textarea>
+                            <textarea class="form-control" name="message" id="formMessage" rows="4" required></textarea>
                             <label class="form-label" for="formMessage">Message</label>
                         </div>
 
-                        <!-- Checkbox -->
-                        <div class="form-check d-flex justify-content-center mb-4">
-                            <input class="form-check-input me-2" type="checkbox" value="" id="formCopyCheck" checked />
-                            <label class="form-check-label" for="formCopyCheck">
-                                Send me a copy of this message
-                            </label>
-                        </div>
+                        <!-- Auto response -->
+                        <input type="hidden" name="_autoresponse"
+                            value="Thank you for reaching out! I will get back to you promptly">
 
                         <!-- Submit button -->
-                        <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4">Send</button>
+                        <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
                     </form>
                 </section>
             </div>
