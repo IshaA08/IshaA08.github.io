@@ -17,6 +17,10 @@ body {
     padding: 0;
     margin: 0;
     background: var(--bg);
+    /* Make everything unselectable */
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .container {
