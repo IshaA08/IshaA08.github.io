@@ -27,6 +27,7 @@ body {
 h1 {
     font-family: var(--title), cursive;
     font-size: 65px;
+    font-weight: bold;
     text-align: center;
     color: var(--font);
 }
@@ -34,6 +35,7 @@ h1 {
 h2 {
     font-family: var(--title), cursive;
     font-size: 40px;
+    font-weight: bold;
     text-align: center;
     margin-top: 90px;
 }
@@ -47,6 +49,8 @@ h2 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    font-family: var(--body), sans-serif;
+    font-weight: bold;
 
     /* Default in case image fails */
     background-color: var(--bg);
@@ -63,8 +67,8 @@ h2 {
 .nav-link {
     color: var(--font);
     cursor: pointer;
-    margin-right: 1em;
-    margin-left: 1em;
+    margin-right: 5px;
+    margin-left: 5px;
     margin-top: 0.4em;
     margin-bottom: 0.4em;
 }
