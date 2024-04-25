@@ -3,9 +3,14 @@
     --bg: #F1DAC4;
     --font: #1F2232;
     --primary: #FFB7C5;
-    --secondary: #6BA368;
+    --secondary: #e7b1bc;
     --accent: #596475;
     --timeline: #98b8c5;
+    --cards: #beb0a3;
+
+    /* Font Styles */
+    --title: "Allura";
+    --body: "KoHo";
 }
 
 body {
@@ -20,8 +25,17 @@ body {
 }
 
 h1 {
+    font-family: var(--title), cursive;
+    font-size: 65px;
     text-align: center;
     color: var(--font);
+}
+
+h2 {
+    font-family: var(--title), cursive;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 90px;
 }
 
 /***********************
@@ -149,55 +163,66 @@ h1 {
     position: relative;
 }
 
-.intro h1 {
-    text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
-}
-
 .intro {
     left: 50%;
     position: absolute;
-    top: 35%;
+    top: 45%;
     transform: translate(-50%, -55%);
     text-align: center;
     z-index: 20;
 }
 
+.intro h1 {
+    font-family: var(--title), cursive;
+    color: white;
+    font-size: 85px;
+    text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
+    background-color: var(--font);
+    border-radius: 30px;
+    opacity: 80%;
+}
+
 .intro p {
-    color: var(--font);
-    font-size: 1.3rem;
+    font-family: var(--body), sans-serif;
+    color: white;
+    font-size: 30px;
     line-height: 1.5;
     text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
+    background-color: var(--font);
+    border-radius: 30px;
+    opacity: 80%;
 }
 
 .intro-portrait {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 2px solid var(--font);
-    background-color: var(--timeline);
+    border: 3px solid var(--primary);
+    background-color: var(--font);
     background-image: url(images/main-portrait.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     margin-left: 39%;
-    box-shadow: -3px 3px 5px #fff;
+    box-shadow: -3px 3px 5px white;
 }
 
-.intro button {
+.glassy-button {
+    font-family: var(--body);
     color: var(--font);
     font-size: 1rem;
     line-height: 1.5;
-    border: 1px solid var(--accent);
+    border: 2px solid var(--accent);
     background-image: url("images/pink-nav.png");
     border-radius: 30px;
     background-repeat: no-repeat;
     background-color: var(--primary);
-    opacity: 50%;
-    box-shadow: -5px 5px 5px #fff, 5px 5px 5px #fff;
+    opacity: 70%;
+    box-shadow: 0px 5px 10px #fff;
 }
 
-.intro button:hover {
-    border: 1px solid var(--font);
+.glassy-button:hover {
+    border: 2px solid var(--font);
     color: var(--font);
     opacity: 100%;
 }
@@ -207,19 +232,14 @@ h1 {
 ************************/
 #about {
     height: auto;
-    padding-top: 30px;
+    padding-top: 20px;
     background-color: var(--primary);
-}
-
-h2 {
-    text-align: center;
-    margin-top: 90px;
 }
 
 #about .about-portrait {
     width: 150px;
     height: 350px;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 #about .about-socials {
@@ -229,10 +249,13 @@ h2 {
 }
 
 #about p {
+    font-family: var(--body), sans-serif;
+    font-size: 18px;
+    color: var(--font);
     text-align: left;
-    margin-top: 30px;
+    margin-top: 5px;
     margin-right: 10px;
-    margin-left: 40px;
+    margin-left: 80px;
 }
 
 .about-social-links {
@@ -287,10 +310,14 @@ h2 {
 }
 
 #experience .subtitle {
+    font-family: var(--body), sans-serif;
+    font-size: 20px;
+    color: var(--font);
     text-align: center;
 }
 
 .timeline-with-icons {
+    font-family: var(--body), sans-serif;
     border-left: 1px solid var(--timeline);
     position: relative;
     list-style: none;
@@ -376,13 +403,18 @@ h2 {
 }
 
 #skills p {
+    font-family: var(--body), sans-serif;
+    font-size: 20px;
+    color: var(--font);
     text-align: center;
 }
 
 #skills .card {
-    background-color: var(--primary);
+    font-family: var(--body), sans-serif;
+    color: var(--font);
+    background-color: var(--secondary);
     text-align: center;
-    box-shadow: -1px 3px 4px var(--timeline);
+    box-shadow: -1px 2px 4px var(--font);
 }
 
 #skills .card img {
@@ -399,7 +431,9 @@ h2 {
 }
 
 h5 {
-    font-weight: bold;
+    font-family: var(--body), sans-serif;
+    color: var(--font);
+    text-align: center;
 }
 
 /***********************
@@ -413,6 +447,9 @@ h5 {
 }
 
 #services p {
+    font-family: var(--body), sans-serif;
+    font-size: 20px;
+    color: var(--font);
     text-align: center;
 }
 
@@ -422,13 +459,13 @@ h5 {
 }
 
 #services .card {
-    background-color: var(--bg);
+    background-color: var(--cards);
     text-align: center;
-    box-shadow: -1px 3px 4px var(--timeline);
+    box-shadow: -1px 2px 4px var(--font);
 }
 
 #services .card img {
-    width: 120px;
+    width: 125px;
     height: 115px;
     margin-left: auto;
     margin-right: auto;
@@ -444,12 +481,13 @@ h5 {
     height: auto;
 }
 
-#contact h5 {
-    text-align: center;
+#contact .glassy-button {
+    margin-left: 45%;
 }
 
 form {
     margin-left: auto;
     margin-right: auto;
     width: 400px;
+    font-family: var(--body), sans-serif;
 }
