@@ -522,3 +522,24 @@ form {
     width: 400px;
     font-family: var(--body), sans-serif;
 }
+
+/***********************
+ Footer
+************************/
+footer {
+    background-color: var(--font);
+    text-align: center;
+    font-family: var(--body), sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+    color: var(--cards);
+}
+
+footer a {
+    color: var(--shadow-cards);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--shadow-primary);
+}
