@@ -152,6 +152,15 @@ h2 {
     height: 50px;
 }
 
+.leftsocials nav a:hover,
+.rightsocials nav a:hover,
+#about a:hover {
+    border-radius: 50%;
+    box-shadow:
+        2px 2px 2px #fff,
+        -2px 2px 2px #fff;
+}
+
 #hackerrank,
 #linkedin {
     height: 40px;
