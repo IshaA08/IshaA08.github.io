@@ -5,10 +5,12 @@
     --primary: #FFB7C5;
     --secondary: #f8bec8;
     --accent: #596475;
+    --headline: #fff;
     --timeline: #98b8c5;
     --cards: #f0e2d2;
     --shadow-primary: #fa96ae;
     --shadow-cards: #f0bf84;
+    --test: #21335b;
 
     /* Font Styles */
     --title: "Allura";
@@ -43,6 +45,7 @@ h2 {
     font-size: 40px;
     font-weight: bold;
     text-align: center;
+    color: var(--font);
     margin-top: 90px;
 }
 
@@ -146,14 +149,14 @@ h2 {
     box-shadow: 8px 8px 6px -6px #999;
 }
 
-.leftsocials nav a img,
-.rightsocials nav a img {
+.leftsocials nav img,
+.rightsocials nav img {
     width: 50px;
     height: 50px;
 }
 
 .leftsocials nav a:hover,
-.rightsocials nav a:hover,
+.rightsocials nav img:hover,
 #about a:hover {
     border-radius: 50%;
     box-shadow:
@@ -170,6 +173,12 @@ h2 {
 #arrow {
     height: 35px;
     width: 30px;
+}
+
+.rightsocials .display-btn {
+    background: none;
+    background-color: none;
+    border: none;
 }
 
 /***********************
@@ -193,7 +202,7 @@ h2 {
 
 .intro h1 {
     font-family: var(--title), cursive;
-    color: white;
+    color: var(--headline);
     font-size: 85px;
     text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
     background-color: var(--font);
@@ -203,7 +212,7 @@ h2 {
 
 .intro p {
     font-family: var(--body), sans-serif;
-    color: white;
+    color: var(--headline);
     font-size: 30px;
     line-height: 1.5;
     text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;

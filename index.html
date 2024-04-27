@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/animations.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 
     <!-- Favicon -->
     <link rel="icon" href="css/images/favicon_io/favicon.ico">
@@ -666,9 +667,17 @@
                     <a class="nav-link" href="#about">
                         <img src="css/images/logos-for-links/chat.png" title="Chat with me" id="chat">
                     </a>
-                    <a class="nav-link" href="#">
-                        <img src="css/images/logos-for-links/env-mode.png" title="Change the display mode">
-                    </a>
+                    <div class="btn-group" role="group">
+                        <button id="btnGroupDrop" type="button" class="btn btn-secondary display-btn"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-toggle="dropdown">
+                            <img src="css/images/logos-for-links/env-mode.png" title="Change the display mode">
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop">
+                            <button type="button" class="dropdown-item" onclick="dayMode()">Day</button>
+                            <button type="button" class="dropdown-item" onclick="eveningMode()">Evening</button>
+                            <button type="button" class="dropdown-item" onclick="nightMode()">Night</button>
+                        </div>
+                    </div>
                     <a class="nav-link" href="#home">
                         <img src="css/images/logos-for-links/arrow.png" id="arrow">
                     </a>
