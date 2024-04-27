@@ -12,8 +12,8 @@ ready(() => {
     // Set the colour palette according to the user's current time
     const current = new Date();
     const user_hour = current.getHours();
-    if (user_hour > 5 && user_hour < 16) dayMode();
-    else if (user_hour > 16 && user_hour < 21) eveningMode();
+    if ((user_hour > 7) && (user_hour < 16)) dayMode();
+    else if ((user_hour >= 16) && (user_hour <= 21)) eveningMode();
     else nightMode();
 })
 
@@ -92,5 +92,4 @@ function setDate() {
 }
 
 setInterval(setDate, 1000);
-
 setDate();
