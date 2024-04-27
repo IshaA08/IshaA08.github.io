@@ -1,12 +1,20 @@
 /***********************
- Set Header
+ Setup On Load
 ************************/
 var ready = (callback) => {
     if (document.readyState != "loading") callback();
     else document.addEventListener("DOMContentLoaded", callback);
 }
 ready(() => {
+    // Make the header take up the whole screen
     document.querySelector(".header").style.height = window.innerHeight + "px";
+
+    // Set the colour palette according to the user's current time
+    const current = new Date();
+    const user_hour = current.getHours();
+    if (user_hour > 5 && user_hour < 16) dayMode();
+    else if (user_hour > 16 && user_hour < 21) eveningMode();
+    else nightMode();
 })
 
 /***********************
