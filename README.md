@@ -92,5 +92,5 @@ Artists/Sources for each image found in the *images* directory:
 
 ### Inspirations/Interesting Designs
 CSS [desk](https://codepen.io/luisomarti/pen/VwaawWd) animation - Luis Martinez, CSS animations [examples](https://freefrontend.com/css-animation-examples/page/3/),
-Making color palettes with [Cooler](https://coolors.co/), timeline [examples](https://uicookies.com/horizontal-timeline/), CSS [card](https://devdevout.com/css/css-cards)
+Making color palettes with [Coolors](https://coolors.co/), timeline [examples](https://uicookies.com/horizontal-timeline/), CSS [card](https://devdevout.com/css/css-cards)
 examples, contact form [examples](https://freefrontend.com/css-contact-forms/), circular [buttons](https://codepen.io/alvarotrigo/pen/poawYRO) - Alvaro, Bootstrap [dropdowns](https://www.studytonight.com/bootstrap/solvedbootstrap-dropdown-not-working), CSS [sun rays](https://codepen.io/mgkOV/pen/qzNegg)
