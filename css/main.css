@@ -204,22 +204,22 @@ h2 {
 .intro h1 {
     font-family: var(--title), cursive;
     color: var(--headline);
-    font-size: 85px;
+    font-size: 70px;
     text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
     background-color: var(--font);
     border-radius: 30px;
-    opacity: 80%;
+    opacity: 90%;
 }
 
 .intro p {
     font-family: var(--body), sans-serif;
     color: var(--headline);
-    font-size: 30px;
+    font-size: 28px;
     line-height: 1.5;
-    text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
+    /*text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;*/
     background-color: var(--font);
     border-radius: 30px;
-    opacity: 80%;
+    opacity: 90%;
 }
 
 .intro-portrait {
@@ -233,26 +233,29 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     margin-left: 39%;
-    box-shadow: -3px 3px 5px white;
+    /* box-shadow: -3px 3px 5px white; */
 }
 
 .glassy-button {
+    margin-top: 15px;
     font-family: var(--body);
     color: var(--font);
     font-size: 1rem;
     line-height: 1.5;
-    border: 2px solid var(--accent);
-    background-image: url("images/pink-nav.png");
+    border: 2px solid var(--font);
+    /*  background-image: url("images/pink-nav.png"); */
+    background-color: var(--bg);
     border-radius: 30px;
     background-repeat: no-repeat;
     background-color: var(--primary);
     opacity: 70%;
-    box-shadow: 0px 5px 10px #fff;
+    /*box-shadow: 0px 5px 10px #fff;*/
 }
 
 .glassy-button:hover {
     border: 2px solid var(--font);
     color: var(--font);
+    background-color: var(--bg);
     opacity: 100%;
 }
 
