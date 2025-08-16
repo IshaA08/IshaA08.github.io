@@ -11,9 +11,10 @@
     --shadow-primary: #fa96ae;
     --shadow-cards: #f0bf84;
     --test: #21335b;
+    --anchor: #C2185B;
 
     /* Font Styles */
-    --title: "Allura";
+    --title: "Sacramento";
     --body: "Poppins";
 }
 
@@ -37,7 +38,7 @@ h1 {
     font-size: 65px;
     font-weight: bold;
     text-align: center;
-    color: var(--font);
+    color: var(--anchor);
 }
 
 h2 {
@@ -45,7 +46,7 @@ h2 {
     font-size: 40px;
     font-weight: bold;
     text-align: center;
-    color: var(--font);
+    color: var(--anchor);
     margin-top: 90px;
 }
 
