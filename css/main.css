@@ -336,10 +336,10 @@ h2 {
 #experience {
     height: auto;
     padding-top: 30px;
-    background-color: var(--bg);
+    background-color: var(--primary);
     border: 3px solid var(--font);
     margin-top: 100px;
-    box-shadow: -40px 40px var(--shadow-cards);
+    box-shadow: -40px 40px var(--shadow-primary);
 }
 
 #experience .subtitle {
@@ -478,11 +478,11 @@ h5 {
 #services {
     height: auto;
     padding-top: 30px;
-    background-color: var(--bg);
+    background-color: var(--primary);
     padding-bottom: 30px;
     border: 3px solid var(--font);
     margin-top: 100px;
-    box-shadow: -40px 40px var(--shadow-cards);
+    box-shadow: -40px 40px var(--shadow-primary);
 }
 
 #services p {
