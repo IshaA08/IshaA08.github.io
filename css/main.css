@@ -1,4 +1,9 @@
 :root {
+
+    /* Font Styles */
+    --title: "Sacramento";
+    --body: "Poppins";
+
     /* Color Palette */
     --bg: #F1DAC4;
     --font: #1F2232;
@@ -13,9 +18,11 @@
     --test: #21335b;
     --anchor: #C2185B;
 
-    /* Font Styles */
-    --title: "Sacramento";
-    --body: "Poppins";
+    /* Nav and Side Bars */
+    --intro-avatar-bg: url(images/main-portrait.png);
+    --nav-bg: url("images/pink-nav.png");
+    --side-left-bg: url("images/sidebar-left.png");
+    --side-right-bg: url("images/sidebar-right.png");
 }
 
 body {
@@ -55,7 +62,7 @@ h2 {
 ************************/
 .navbar-nav {
     /* Set a background image within the nav bar */
-    background-image: url("images/pink-nav.png");
+    background-image: var(--nav-bg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -115,7 +122,7 @@ h2 {
     border-radius: 50px;
 
     /* Glass-like background */
-    background-image: url("images/sidebar-left.png");
+    background-image: var(--side-left-bg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -139,7 +146,7 @@ h2 {
     border-radius: 50px;
 
     /* Glass-like background */
-    background-image: url("images/sidebar-right.png");
+    background-image: var(--side-right-bg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -228,7 +235,7 @@ h2 {
     border-radius: 50%;
     border: 3px solid var(--primary);
     background-color: var(--font);
-    background-image: url(images/main-portrait.png);
+    background-image: var(--intro-avatar-bg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -248,7 +255,7 @@ h2 {
     border-radius: 30px;
     background-repeat: no-repeat;
     background-color: var(--primary);
-    opacity: 70%;
+    opacity: 90%;
     /*box-shadow: 0px 5px 10px #fff;*/
 }
 

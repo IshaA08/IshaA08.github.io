@@ -35,6 +35,10 @@ function dayMode() {
     document.documentElement.style.setProperty('--shadow-primary', '#00000014');
     document.documentElement.style.setProperty('--shadow-cards', '#616466');
     document.documentElement.style.setProperty('--anchor', '#1D4ED8');
+    document.documentElement.style.setProperty('--intro-avatar-bg', 'url(images/main-portrait-day.png)');
+    document.documentElement.style.setProperty('--nav-bg', 'url("images/day-nav.png")');
+    document.documentElement.style.setProperty('--side-left-bg', 'url("images/sidebar-left-day.png")');
+    document.documentElement.style.setProperty('--side-right-bg', 'url("images/sidebar-right-day.png")');
 }
 
 function eveningMode() {
@@ -52,6 +56,10 @@ function eveningMode() {
     document.documentElement.style.setProperty('--shadow-primary', '#c2185b26');
     document.documentElement.style.setProperty('--shadow-cards', '#f0bf84');
     document.documentElement.style.setProperty('--anchor', '#C2185B');
+    document.documentElement.style.setProperty('--intro-avatar-bg', 'url(images/main-portrait.png)');
+    document.documentElement.style.setProperty('--nav-bg', 'url("images/pink-nav.png")');
+    document.documentElement.style.setProperty('--side-left-bg', 'url("images/sidebar-left.png")');
+    document.documentElement.style.setProperty('--side-right-bg', 'url("images/sidebar-right.png")');
 }
 
 function nightMode() {
@@ -69,6 +77,10 @@ function nightMode() {
     document.documentElement.style.setProperty('--shadow-primary', '#3ddc9726');
     document.documentElement.style.setProperty('--shadow-cards', '#3ddc9726');
     document.documentElement.style.setProperty('--anchor', '#3DDC97');
+    document.documentElement.style.setProperty('--intro-avatar-bg', 'url(images/main-portrait-night.png)');
+    document.documentElement.style.setProperty('--nav-bg', 'url("images/dark-nav.png")');
+    document.documentElement.style.setProperty('--side-left-bg', 'url("images/sidebar-left-dark.png")');
+    document.documentElement.style.setProperty('--side-right-bg', 'url("images/sidebar-right-dark.png")');
 }
 
 /***********************
