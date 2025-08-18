@@ -174,9 +174,17 @@ h2 {
 
 #dribbble,
 #carrd,
-#linkedin {
+#linkedin,
+#hackerrank {
     height: 40px;
     width: 40px;
+}
+
+#chat,
+#display-theme {
+    height: 35px;
+    width: 35px;
+    margin-bottom: 10px;
 }
 
 #arrow {
