@@ -477,12 +477,33 @@ h3 {
 ************************/
 #projects {
     height: auto;
-    padding-top: 30px;
+    /* padding-top: 30px; */
     background-color: var(--primary);
     padding-bottom: 30px;
     border: 3px solid var(--font);
     margin-top: 100px;
     box-shadow: -40px 40px var(--shadow-primary);
+}
+
+.card {
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--shadow-primary);
+    color: var(--font);
+}
+
+.card-title {
+    color: var(--anchor);
+    text-align: center;
+}
+
+#projects .container a {
+    color: var(--anchor);
+    text-decoration: none;
+}
+
+#projects .container a:hover {
+    text-decoration: underline;
 }
 
 /***********************
