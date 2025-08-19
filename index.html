@@ -366,9 +366,9 @@
 
                 <!-- Skills section -->
                 <section id="skills">
-                    <h1>Skills</h1>
                     <!-- Skills Section -->
-                    <div class="skills-section container py-5">
+                    <div class="skills-section d-flex flex-column justify-content-start">
+                        <h1>Skills</h1>
                         <!-- Tabs -->
                         <ul class="nav nav-tabs justify-content-center mb-4" id="skillsTab" role="tablist">
                             <li class="nav-item" role="presentation">
@@ -376,63 +376,76 @@
                                     data-bs-target="#programming" type="button" role="tab">Programming</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="cms-tab" data-bs-toggle="tab" data-bs-target="#cms"
-                                    type="button" role="tab">CMS</button>
+                                <button class="nav-link" id="tools-tab" data-bs-toggle="tab" data-bs-target="#tools"
+                                    type="button" role="tab">Platforms & Libraries</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="design-tab" data-bs-toggle="tab" data-bs-target="#design"
+                                    type="button" role="tab">Design</button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="team-tab" data-bs-toggle="tab" data-bs-target="#team"
-                                    type="button" role="tab">Teamwork</button>
+                                    type="button" role="tab">Collaboration</button>
                             </li>
                         </ul>
                         <!-- Tab Content -->
                         <div class="tab-content" id="skillsTabContent">
                             <div class="tab-pane fade show active" id="programming" role="tabpanel">
-                                <div class="row g-3">
-                                    <div class="col-md-4">
-                                        <div class="skill-card p-3">
-                                            <h5>JavaScript</h5>
-                                            <p>Frontend + backend (Node.js). Familiar with ES6+, async programming.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="skill-card p-3">
-                                            <h5>Python</h5>
-                                            <p>Data analysis, scripting, Flask web apps.</p>
-                                        </div>
-                                    </div>
+                                <div class="skill-chips">
+                                    <span class="skill-chip">Java</span>
+                                    <span class="skill-chip">Python</span>
+                                    <span class="skill-chip">JavaScript</span>
+                                    <span class="skill-chip">C</span>
+                                    <span class="skill-chip">Haskell</span>
+                                    <span class="skill-chip">Prolog</span>
+                                    <span class="skill-chip">PHP</span>
+                                    <span class="skill-chip">ARM Assembly (v8)</span>
+                                    <span class="skill-chip">Visual Basic</span>
+                                    <span class="skill-chip">Typescript</span>
+                                    <span class="skill-chip">SQL</span>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="cms" role="tabpanel">
-                                <div class="row g-3">
-                                    <div class="col-md-4">
-                                        <div class="skill-card p-3">
-                                            <h5>WordPress</h5>
-                                            <p>Theme customization, plugin integration.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="skill-card p-3">
-                                            <h5>Shopify</h5>
-                                            <p>Store setup, theme tweaks, apps integration.</p>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="tab-pane fade" id="tools" role="tabpanel">
+                                <span class="skill-chip">React</span>
+                                <span class="skill-chip">Angular</span>
+                                <span class="skill-chip">Node.js</span>
+                                <span class="skill-chip">Bootstrap</span>
+                                <span class="skill-chip">Java Spring Framework</span>
+                                <span class="skill-chip">Oracle</span>
+                                <span class="skill-chip">Confluence</span>
+                                <span class="skill-chip">Jira</span>
+                                <span class="skill-chip">ServiceNow</span>
+                                <span class="skill-chip">New Relic</span>
+                                <span class="skill-chip">Ansible</span>
+                                <span class="skill-chip">GitHub</span>
+                                <span class="skill-chip">GitLab</span>
+                                <span class="skill-chip">BitBucket</span>
+                                <span class="skill-chip">WordPress</span>
+                                <span class="skill-chip">NumPy</span>
+                                <span class="skill-chip">Pandas</span>
+                                <span class="skill-chip">Matplotlib</span>
+                                <span class="skill-chip">JUnit</span>
+                                <span class="skill-chip">Apache Camel</span>
+                                <span class="skill-chip">Postman</span>
+                                <span class="skill-chip">Mockito</span>
+                                <span class="skill-chip">JSON</span>
+                            </div>
+                            <div class="tab-pane fade" id="design" role="tabpanel">
+                                <span class="skill-chip">HTML</span>
+                                <span class="skill-chip">CSS</span>
+                                <span class="skill-chip">Figma</span>
+                                <span class="skill-chip">Canva</span>
+                                <span class="skill-chip">Bootstrap</span>
                             </div>
                             <div class="tab-pane fade" id="team" role="tabpanel">
-                                <div class="row g-3">
-                                    <div class="col-md-4">
-                                        <div class="skill-card p-3">
-                                            <h5>Agile</h5>
-                                            <p>Scrum + Kanban experience in cross-functional teams.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="skill-card p-3">
-                                            <h5>Leadership</h5>
-                                            <p>Led small dev team during hackathons and group projects.</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                <span class="skill-chip">Agile</span>
+                                <span class="skill-chip">Mentorship</span>
+                                <span class="skill-chip">Teaching</span>
+                                <span class="skill-chip">Cross-functional</span>
+                                <span class="skill-chip">Communication</span>
+                                <span class="skill-chip">Remote Collaboration</span>
+                                <span class="skill-chip">In-Person Collaboration</span>
+                                <span class="skill-chip">Documentation</span>
                             </div>
                         </div>
                     </div>

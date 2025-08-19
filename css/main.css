@@ -430,19 +430,12 @@ h3 {
     border: 3px solid var(--font);
     margin-top: 100px;
     box-shadow: -40px 40px var(--shadow-primary);
+    padding-right: 100px;
+    padding-left: 100px;
 }
 
-.skill-card {
-    background: var(--primary);
-    color: var(--font);
-    border-radius: 1rem;
-    box-shadow: var(--primary-shadow);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.skill-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+.nav-tabs {
+    border-bottom: 2px solid var(--bg);
 }
 
 .nav-tabs .nav-link {
@@ -457,6 +450,26 @@ h3 {
     background: var(--bg);
     color: var(--anchor);
     font-weight: 600;
+}
+
+.skill-chip {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    margin: 0.3rem;
+    font: var(--body);
+    font-size: 0.8rem;
+    background: var(--primary);
+    color: var(--font);
+    border-radius: 999px;
+    box-shadow: var(--primary-shadow);
+    transition: transform 0.2s ease, font-weight 0.15s ease;
+}
+
+.skill-chip:hover {
+    transform: translateY(-2px);
+    background: var(--bg);
+    color: var(--anchor);
+    font-weight: bold;
 }
 
 /***********************
