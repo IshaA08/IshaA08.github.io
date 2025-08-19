@@ -229,9 +229,7 @@
 
                 <!-- Experience section -->
                 <section id="experience">
-
-                    <h1>Work Experience</h1>
-
+                    <h1>Experience So Far</h1>
                     <!-- Experience Carousal -->
                     <div id="experienceCarousel" class="carousel slide" data-bs-ride="false">
                         <!-- Indicators (dots) -->
@@ -369,160 +367,71 @@
                 <!-- Skills section -->
                 <section id="skills">
                     <h1>Skills</h1>
-                    <p>My Technical Strengths</p>
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="css/images/skill-icons/python.png" class="card-img-top" alt="Python logo">
-                                <div class="card-body">
-                                    <h5 class="card-title">Python</h5>
-                                    <p class="card-text">High-level programming language that emphasizes clean code and
-                                        readability.<br><b>Projects: </b>
-                                        Backend for health network app, Data visualization (Plotly)
-                                    </p>
+                    <!-- Skills Section -->
+                    <div class="skills-section container py-5">
+                        <!-- Tabs -->
+                        <ul class="nav nav-tabs justify-content-center mb-4" id="skillsTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="programming-tab" data-bs-toggle="tab"
+                                    data-bs-target="#programming" type="button" role="tab">Programming</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="cms-tab" data-bs-toggle="tab" data-bs-target="#cms"
+                                    type="button" role="tab">CMS</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="team-tab" data-bs-toggle="tab" data-bs-target="#team"
+                                    type="button" role="tab">Teamwork</button>
+                            </li>
+                        </ul>
+                        <!-- Tab Content -->
+                        <div class="tab-content" id="skillsTabContent">
+                            <div class="tab-pane fade show active" id="programming" role="tabpanel">
+                                <div class="row g-3">
+                                    <div class="col-md-4">
+                                        <div class="skill-card p-3">
+                                            <h5>JavaScript</h5>
+                                            <p>Frontend + backend (Node.js). Familiar with ES6+, async programming.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="skill-card p-3">
+                                            <h5>Python</h5>
+                                            <p>Data analysis, scripting, Flask web apps.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="css/images/skill-icons/java.png" class="card-img-top" alt="Java logo">
-                                <div class="card-body">
-                                    <h5 class="card-title">Java</h5>
-                                    <p class="card-text">Class-based object-oriented programming language that
-                                        emphasizes minimal implementation dependencies.
-                                        <br><b>Projects: </b>
-                                        E-commerce platform (Spring framework), Object serializer
-                                    </p>
-
+                            <div class="tab-pane fade" id="cms" role="tabpanel">
+                                <div class="row g-3">
+                                    <div class="col-md-4">
+                                        <div class="skill-card p-3">
+                                            <h5>WordPress</h5>
+                                            <p>Theme customization, plugin integration.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="skill-card p-3">
+                                            <h5>Shopify</h5>
+                                            <p>Store setup, theme tweaks, apps integration.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="css/images/skill-icons/c.png" class="card-img-top" alt="C logo">
-                                <div class="card-body">
-                                    <h5 class="card-title">C</h5>
-                                    <p class="card-text">Widely used general-purpose programming language that
-                                        represents CPU capabilities.
-                                        <br><b>Projects: </b>
-                                        Server-client network application, Data transfer distribution system
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="css/images/skill-icons/js.png" class="card-img-top" alt="JavaScript logo">
-                                <div class="card-body">
-                                    <h5 class="card-title">JavaScript</h5>
-                                    <p class="card-text">Core Web programming language/technology used for client-side
-                                        behaviour.
-                                        <br><b>Projects: </b>
-                                        Fitness mobile app, Portfolio, Employee manager app (Angular)
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="css/images/skill-icons/bootstrap.png" class="card-img-top"
-                                    alt="Bootstrap logo">
-                                <div class="card-body">
-                                    <h5 class="card-title">Bootstrap</h5>
-                                    <p class="card-text">Open-source CSS framework that aims for responsive front-end
-                                        development.
-                                        <br><b>Projects: </b>
-                                        Portfolio, Animation (city night scrolling, sun rays, screens)
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="css/images/skill-icons/azure.png" class="card-img-top" alt="MS Azure logo">
-                                <div class="card-body">
-                                    <h5 class="card-title">MS Azure</h5>
-                                    <p class="card-text">Cloud computing platform developed by Microsoft.
-                                        <br><b>Certification: </b> Microsoft Certified - Azure Fundamentals (Sep 2023)
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="css/images/skill-icons/ms office.png" class="card-img-top"
-                                    alt="MS Office logo">
-                                <div class="card-body">
-                                    <h5 class="card-title">MS Office</h5>
-                                    <p class="card-text">Family of client software, server software and services
-                                        developed by Microsoft.
-                                        <br><b>Experienced In: </b>
-                                        Word, Excel, PowerPoint, Access
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="css/images/skill-icons/wp.png" class="card-img-top" alt="WordPress logo">
-                                <div class="card-body">
-                                    <h5 class="card-title">WordPress</h5>
-                                    <p class="card-text">Open-source Web content management system (CMS).
-                                        <br><b>Projects: </b>
-                                        Non-profit website migration, non-profit website front-end development
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="css/images/skill-icons/jira.png" class="card-img-top" alt="Jira logo">
-                                <div class="card-body">
-                                    <h5 class="card-title">Jira</h5>
-                                    <p class="card-text">Atlassian propriety product used for issue tracking and project
-                                        management.
-                                        <br><b>Tasks: </b>
-                                        Internal user issue resolutions, ticket management for company projects
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="css/images/skill-icons/confluence.png" class="card-img-top"
-                                    alt="Confluence logo">
-                                <div class="card-body">
-                                    <h5 class="card-title">Confluence</h5>
-                                    <p class="card-text">Atlassian propriety web-based corporate wiki product.
-                                        <br><b>Tasks: </b>
-                                        Company tool documentation, business processes documentation
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="css/images/skill-icons/servicenow.png" class="card-img-top"
-                                    alt="ServiceNow logo">
-                                <div class="card-body">
-                                    <h5 class="card-title">ServiceNow</h5>
-                                    <p class="card-text">Cloud computing platform used for managing enterprise digital
-                                        workflows.
-                                        <br><b>Tasks: </b>
-                                        User issue resolution with tools, workflow for tasks related to managed tools
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="css/images/skill-icons/mysql.png" class="card-img-top" alt="MySQL logo">
-                                <div class="card-body">
-                                    <h5 class="card-title">MySQL</h5>
-                                    <p class="card-text">Open-source relational database management system.
-                                        <br><b>Projects: </b>
-                                        Library management app, fitness mobile app, employee management app
-                                    </p>
+                            <div class="tab-pane fade" id="team" role="tabpanel">
+                                <div class="row g-3">
+                                    <div class="col-md-4">
+                                        <div class="skill-card p-3">
+                                            <h5>Agile</h5>
+                                            <p>Scrum + Kanban experience in cross-functional teams.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="skill-card p-3">
+                                            <h5>Leadership</h5>
+                                            <p>Led small dev team during hackathons and group projects.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

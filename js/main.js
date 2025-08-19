@@ -29,8 +29,8 @@ function dayMode() {
     document.documentElement.style.setProperty('--sky-top', '#00b3ff');
     document.documentElement.style.setProperty('--sky-bottom', '#b1e8ff');
     document.documentElement.style.setProperty('--stars-bright', '#00b3ff');
-    document.documentElement.style.setProperty('--stars-normal', '#b1e8ff');
-    document.documentElement.style.setProperty('--stars-variation', '#ffffffb3');
+    document.documentElement.style.setProperty('--stars-normal', '#00b3ff');
+    document.documentElement.style.setProperty('--stars-variation', '#edfaffff');
     document.documentElement.style.setProperty('--cards', '#b5bfc4');
     document.documentElement.style.setProperty('--shadow-primary', '#00000014');
     document.documentElement.style.setProperty('--shadow-cards', '#616466');
