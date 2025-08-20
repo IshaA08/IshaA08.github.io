@@ -493,8 +493,10 @@ h3 {
 }
 
 .card-title {
+    font: var(--body);
     color: var(--anchor);
     text-align: center;
+    font-size: 1.25rem;
 }
 
 #projects .container a {
@@ -511,12 +513,30 @@ h3 {
 ************************/
 #doing-now {
     height: auto;
-    padding-top: 30px;
+    /*padding-top: 30px;*/
     background-color: var(--primary);
     padding-bottom: 30px;
     border: 3px solid var(--font);
     margin-top: 100px;
     box-shadow: -40px 40px var(--shadow-primary);
+}
+
+#doing-now .card {
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--shadow-primary);
+    color: var(--font);
+}
+
+#doing-now .card-title {
+    font: var(--body);
+    color: var(--anchor);
+    font-size: 1.5rem;
+}
+
+#doing-now .text-muted {
+    font: var(--body) !important;
+    color: var(--font) !important;
 }
 
 /***********************
