@@ -576,6 +576,25 @@ form {
     color: var(--font);
 }
 
+.form-label {
+    color: var(--font);
+    font: var(--body);
+}
+
+.form-control {
+    background-color: var(--bg);
+    color: var(--anchor);
+    border: 1px solid var(--shadow-primary);
+    border-radius: 0.5rem;
+}
+
+form .form-control:focus {
+    background-color: var(--bg);
+    color: var(--anchor);
+    border-color: var(--anchor);
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1);
+}
+
 /***********************
  Footer
 ************************/
