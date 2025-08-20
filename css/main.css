@@ -613,4 +613,10 @@ form .form-control:focus {
 footer p {
     font-size: 0.9rem;
     opacity: 0.8;
+    color: var(--font);
+}
+
+h6 {
+    font: var(--body);
+    color: var(--font);
 }
