@@ -1,4 +1,9 @@
 :root {
+
+    /* Font Styles */
+    --title: "Sacramento";
+    --body: "Poppins";
+
     /* Color Palette */
     --bg: #F1DAC4;
     --font: #1F2232;
@@ -11,10 +16,13 @@
     --shadow-primary: #fa96ae;
     --shadow-cards: #f0bf84;
     --test: #21335b;
+    --anchor: #C2185B;
 
-    /* Font Styles */
-    --title: "Allura";
-    --body: "KoHo";
+    /* Nav and Side Bars */
+    --intro-avatar-bg: url(images/main-portrait.png);
+    --nav-bg: url("images/pink-nav.png");
+    --side-left-bg: url("images/sidebar-left.png");
+    --side-right-bg: url("images/sidebar-right.png");
 }
 
 body {
@@ -37,7 +45,7 @@ h1 {
     font-size: 65px;
     font-weight: bold;
     text-align: center;
-    color: var(--font);
+    color: var(--anchor);
 }
 
 h2 {
@@ -45,8 +53,15 @@ h2 {
     font-size: 40px;
     font-weight: bold;
     text-align: center;
-    color: var(--font);
+    color: var(--anchor);
     margin-top: 90px;
+}
+
+h3 {
+    font-family: var(--title), cursive;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--font);
 }
 
 /***********************
@@ -54,7 +69,7 @@ h2 {
 ************************/
 .navbar-nav {
     /* Set a background image within the nav bar */
-    background-image: url("images/pink-nav.png");
+    background-image: var(--nav-bg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -114,7 +129,7 @@ h2 {
     border-radius: 50px;
 
     /* Glass-like background */
-    background-image: url("images/sidebar-left.png");
+    background-image: var(--side-left-bg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -138,7 +153,7 @@ h2 {
     border-radius: 50px;
 
     /* Glass-like background */
-    background-image: url("images/sidebar-right.png");
+    background-image: var(--side-right-bg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -164,10 +179,19 @@ h2 {
         -2px 2px 2px #fff;
 }
 
-#hackerrank,
-#linkedin {
+#dribbble,
+#carrd,
+#linkedin,
+#hackerrank {
     height: 40px;
     width: 40px;
+}
+
+#chat,
+#display-theme {
+    height: 35px;
+    width: 35px;
+    margin-bottom: 10px;
 }
 
 #arrow {
@@ -203,22 +227,22 @@ h2 {
 .intro h1 {
     font-family: var(--title), cursive;
     color: var(--headline);
-    font-size: 85px;
+    font-size: 70px;
     text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
     background-color: var(--font);
     border-radius: 30px;
-    opacity: 80%;
+    opacity: 90%;
 }
 
 .intro p {
     font-family: var(--body), sans-serif;
     color: var(--headline);
-    font-size: 30px;
+    font-size: 28px;
     line-height: 1.5;
-    text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
+    /*text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;*/
     background-color: var(--font);
     border-radius: 30px;
-    opacity: 80%;
+    opacity: 90%;
 }
 
 .intro-portrait {
@@ -227,31 +251,34 @@ h2 {
     border-radius: 50%;
     border: 3px solid var(--primary);
     background-color: var(--font);
-    background-image: url(images/main-portrait.png);
+    background-image: var(--intro-avatar-bg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     margin-left: 39%;
-    box-shadow: -3px 3px 5px white;
+    /* box-shadow: -3px 3px 5px white; */
 }
 
 .glassy-button {
+    margin-top: 15px;
     font-family: var(--body);
     color: var(--font);
     font-size: 1rem;
     line-height: 1.5;
-    border: 2px solid var(--accent);
-    background-image: url("images/pink-nav.png");
+    border: 2px solid var(--font);
+    /*  background-image: url("images/pink-nav.png"); */
+    background-color: var(--bg);
     border-radius: 30px;
     background-repeat: no-repeat;
     background-color: var(--primary);
-    opacity: 70%;
-    box-shadow: 0px 5px 10px #fff;
+    opacity: 90%;
+    /*box-shadow: 0px 5px 10px #fff;*/
 }
 
 .glassy-button:hover {
     border: 2px solid var(--font);
     color: var(--font);
+    background-color: var(--bg);
     opacity: 100%;
 }
 
@@ -336,93 +363,60 @@ h2 {
 #experience {
     height: auto;
     padding-top: 30px;
-    background-color: var(--bg);
+    background-color: var(--primary);
     border: 3px solid var(--font);
     margin-top: 100px;
-    box-shadow: -40px 40px var(--shadow-cards);
+    box-shadow: -40px 40px var(--shadow-primary);
 }
 
-#experience .subtitle {
+#experience p {
     font-family: var(--body), sans-serif;
-    font-size: 20px;
     color: var(--font);
-    text-align: center;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 15px;
 }
 
-.timeline-with-icons {
+.exp-title {
     font-family: var(--body), sans-serif;
-    border-left: 1px solid var(--timeline);
-    position: relative;
-    list-style: none;
-    margin-left: 60px;
-    margin-right: 60px;
+    color: var(--font);
+    opacity: 75%;
 }
 
-.timeline-with-icons .timeline-item {
-    position: relative;
-}
-
-.timeline-with-icons .timeline-item:after {
-    position: absolute;
-    display: block;
-    top: 0;
-}
-
-.timeline-with-icons .timeline-icon {
-    position: absolute;
-    left: -48px;
-    background-color: var(--timeline);
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
-    height: 31px;
-    width: 31px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: var(--font);
+    border: none;
+    margin: 0 6px;
+    margin-bottom: 5px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.icon-1 {
-    height: 100%;
-    width: 100%;
-    background-image: url(images/timeline-icons/school.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+.carousel-indicators .active {
+    opacity: 1;
+    transform: scale(1.2);
+    background-color: var(--anchor);
 }
 
-.icon-2 {
-    height: 100%;
-    width: 100%;
-    background-image: url(images/timeline-icons/pointer.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: none;
+    background-image: none;
 }
 
-.icon-3 {
-    height: 100%;
-    width: 100%;
-    background-image: url(images/timeline-icons/group.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+.carousel-control-prev-icon::after {
+    content: '‹';
+    font-size: 3rem;
+    color: var(--font);
 }
 
-.icon-4 {
-    height: 100%;
-    width: 100%;
-    background-image: url(images/timeline-icons/grad.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.icon-5 {
-    height: 100%;
-    width: 100%;
-    background-image: url(images/timeline-icons/seo.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+.carousel-control-next-icon::after {
+    content: '›';
+    font-size: 3rem;
+    color: var(--font);
 }
 
 /***********************
@@ -436,79 +430,113 @@ h2 {
     border: 3px solid var(--font);
     margin-top: 100px;
     box-shadow: -40px 40px var(--shadow-primary);
+    padding-right: 100px;
+    padding-left: 100px;
 }
 
-#skills p {
-    font-family: var(--body), sans-serif;
-    font-size: 20px;
+.nav-tabs {
+    border-bottom: 2px solid var(--bg);
+}
+
+.nav-tabs .nav-link {
     color: var(--font);
-    text-align: center;
+    border: none;
+    background: var(--primary);
+    margin: 0 0.25rem;
+    border-radius: 0.75rem 0.75rem 0 0;
 }
 
-#skills .card {
-    font-family: var(--body), sans-serif;
+.nav-tabs .nav-link.active {
+    background: var(--bg);
+    color: var(--anchor);
+    font-weight: 600;
+}
+
+.skill-chip {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    margin: 0.3rem;
+    font: var(--body);
+    font-size: 0.8rem;
+    background: var(--primary);
     color: var(--font);
-    background-color: var(--secondary);
-    text-align: center;
-    box-shadow: -1px 2px 4px var(--font);
+    border-radius: 999px;
+    box-shadow: var(--primary-shadow);
+    transition: transform 0.2s ease, font-weight 0.15s ease;
 }
 
-#skills .card img {
-    width: 90px;
-    height: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-}
-
-#skills .row {
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-h5 {
-    font-family: var(--body), sans-serif;
-    color: var(--font);
-    text-align: center;
+.skill-chip:hover {
+    transform: translateY(-2px);
+    background: var(--bg);
+    color: var(--anchor);
+    font-weight: bold;
 }
 
 /***********************
- Services Section
+ Projects Section
 ************************/
-#services {
+#projects {
     height: auto;
-    padding-top: 30px;
-    background-color: var(--bg);
+    /* padding-top: 30px; */
+    background-color: var(--primary);
     padding-bottom: 30px;
     border: 3px solid var(--font);
     margin-top: 100px;
-    box-shadow: -40px 40px var(--shadow-cards);
+    box-shadow: -40px 40px var(--shadow-primary);
 }
 
-#services p {
-    font-family: var(--body), sans-serif;
-    font-size: 20px;
+.card {
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--shadow-primary);
     color: var(--font);
+}
+
+.card-title {
+    font: var(--body);
+    color: var(--anchor);
     text-align: center;
+    font-size: 1.25rem;
 }
 
-#services .row {
-    margin-left: 30px;
-    margin-right: 30px;
+#projects .container a {
+    color: var(--anchor);
+    text-decoration: none;
 }
 
-#services .card {
-    background-color: var(--cards);
-    text-align: center;
-    box-shadow: -1px 2px 4px var(--font);
+#projects .container a:hover {
+    text-decoration: underline;
 }
 
-#services .card img {
-    width: 125px;
-    height: 115px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
+/***********************
+ Currently Section
+************************/
+#doing-now {
+    height: auto;
+    /*padding-top: 30px;*/
+    background-color: var(--primary);
+    padding-bottom: 30px;
+    border: 3px solid var(--font);
+    margin-top: 100px;
+    box-shadow: -40px 40px var(--shadow-primary);
+}
+
+#doing-now .card {
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--shadow-primary);
+    color: var(--font);
+}
+
+#doing-now .card-title {
+    font: var(--body);
+    color: var(--anchor);
+    font-size: 1.5rem;
+}
+
+#doing-now .text-muted {
+    font: var(--body) !important;
+    color: var(--font) !important;
 }
 
 /***********************
@@ -534,30 +562,61 @@ h5 {
     margin-left: 30%;
 }
 
+#contact h5 {
+    font: var(--body);
+    color: var(--font);
+    text-align: center;
+}
+
 form {
     margin-left: auto;
     margin-right: auto;
     width: 400px;
     font-family: var(--body), sans-serif;
+    color: var(--font);
+}
+
+.form-label {
+    color: var(--font);
+    font: var(--body);
+}
+
+.form-control {
+    background-color: var(--bg);
+    color: var(--anchor);
+    border: 1px solid var(--shadow-primary);
+    border-radius: 0.5rem;
+}
+
+form .form-control:focus {
+    background-color: var(--bg);
+    color: var(--anchor);
+    border-color: var(--anchor);
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1);
 }
 
 /***********************
  Footer
 ************************/
-footer {
-    background-color: var(--font);
-    text-align: center;
-    font-family: var(--body), sans-serif;
-    font-weight: bolder;
-    font-size: 15px;
-    color: var(--cards);
-}
-
-footer a {
-    color: var(--shadow-cards);
+.footer-link {
+    margin-left: 1rem;
     text-decoration: none;
+    color: var(--font);
+    transition: color 0.2s ease;
 }
 
-footer a:hover {
-    color: var(--shadow-primary);
+.footer-link:hover {
+    color: var(--anchor);
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    color: var(--font);
+}
+
+h6 {
+    font: var(--body);
+    color: var(--font);
 }
