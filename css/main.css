@@ -598,20 +598,19 @@ form .form-control:focus {
 /***********************
  Footer
 ************************/
-footer {
-    background-color: var(--font);
-    text-align: center;
-    font-family: var(--body), sans-serif;
-    font-weight: bolder;
-    font-size: 15px;
-    color: var(--cards);
-}
-
-footer a {
-    color: var(--shadow-cards);
+.footer-link {
+    margin-left: 1rem;
     text-decoration: none;
+    color: var(--font);
+    transition: color 0.2s ease;
 }
 
-footer a:hover {
-    color: var(--shadow-primary);
+.footer-link:hover {
+    color: var(--anchor);
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 0.9rem;
+    opacity: 0.8;
 }
