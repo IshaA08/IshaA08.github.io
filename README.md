@@ -36,5 +36,5 @@ Feel free to explore the code, play with the themes (`day` / `evening` / `night`
 ---
 
 ## What's Next
-- Consider accessibility audits per theme
+- Accessibility audits per theme
 - Expand “Notable Projects” with deeper case studies
